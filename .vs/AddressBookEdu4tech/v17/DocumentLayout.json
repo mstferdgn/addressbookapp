@@ -1,0 +1,491 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Mustafa\\Desktop\\Edutech_Assignments\\ASSIGNMENTS\\ASPNETMVC_CORE_ASSIGNMENT\\AddressBook\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{508A20C1-1BDD-48C5-983B-CEA30F560746}|AddressBookAPI\\AddressBookAPI.csproj|c:\\users\\mustafa\\desktop\\edutech_assignments\\assignments\\aspnetmvc_core_assignment\\addressbook\\addressbookapi\\addressbookapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{508A20C1-1BDD-48C5-983B-CEA30F560746}|AddressBookAPI\\AddressBookAPI.csproj|solutionrelative:addressbookapi\\addressbookapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28586C84-DCF8-4D61-AAEC-BA2736E139FC}|AddressBookEL\\AddressBookEL.csproj|c:\\users\\mustafa\\desktop\\edutech_assignments\\assignments\\aspnetmvc_core_assignment\\addressbook\\addressbookel\\addressbookel.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{28586C84-DCF8-4D61-AAEC-BA2736E139FC}|AddressBookEL\\AddressBookEL.csproj|solutionrelative:addressbookel\\addressbookel.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{508A20C1-1BDD-48C5-983B-CEA30F560746}|AddressBookAPI\\AddressBookAPI.csproj|c:\\users\\mustafa\\desktop\\edutech_assignments\\assignments\\aspnetmvc_core_assignment\\addressbook\\addressbookapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{508A20C1-1BDD-48C5-983B-CEA30F560746}|AddressBookAPI\\AddressBookAPI.csproj|solutionrelative:addressbookapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28586C84-DCF8-4D61-AAEC-BA2736E139FC}|AddressBookEL\\AddressBookEL.csproj|c:\\users\\mustafa\\desktop\\edutech_assignments\\assignments\\aspnetmvc_core_assignment\\addressbook\\addressbookel\\entities\\ibaseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28586C84-DCF8-4D61-AAEC-BA2736E139FC}|AddressBookEL\\AddressBookEL.csproj|solutionrelative:addressbookel\\entities\\ibaseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28586C84-DCF8-4D61-AAEC-BA2736E139FC}|AddressBookEL\\AddressBookEL.csproj|c:\\users\\mustafa\\desktop\\edutech_assignments\\assignments\\aspnetmvc_core_assignment\\addressbook\\addressbookel\\entities\\district.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28586C84-DCF8-4D61-AAEC-BA2736E139FC}|AddressBookEL\\AddressBookEL.csproj|solutionrelative:addressbookel\\entities\\district.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28586C84-DCF8-4D61-AAEC-BA2736E139FC}|AddressBookEL\\AddressBookEL.csproj|c:\\users\\mustafa\\desktop\\edutech_assignments\\assignments\\aspnetmvc_core_assignment\\addressbook\\addressbookel\\entities\\city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28586C84-DCF8-4D61-AAEC-BA2736E139FC}|AddressBookEL\\AddressBookEL.csproj|solutionrelative:addressbookel\\entities\\city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85CB5E84-6E3F-4C55-8891-0A1701FACAAB}|AddressBookWebUI\\AddressBookWebUI.csproj|c:\\users\\mustafa\\desktop\\edutech_assignments\\assignments\\aspnetmvc_core_assignment\\addressbook\\addressbookwebui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85CB5E84-6E3F-4C55-8891-0A1701FACAAB}|AddressBookWebUI\\AddressBookWebUI.csproj|solutionrelative:addressbookwebui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{508A20C1-1BDD-48C5-983B-CEA30F560746}|AddressBookAPI\\AddressBookAPI.csproj|c:\\users\\mustafa\\desktop\\edutech_assignments\\assignments\\aspnetmvc_core_assignment\\addressbook\\addressbookapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{508A20C1-1BDD-48C5-983B-CEA30F560746}|AddressBookAPI\\AddressBookAPI.csproj|solutionrelative:addressbookapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6B1C10C-9798-4B4C-95B5-AEA77E338A4C}|AddressBookBL\\AddressBookBL.csproj|c:\\users\\mustafa\\desktop\\edutech_assignments\\assignments\\aspnetmvc_core_assignment\\addressbook\\addressbookbl\\emailsenderprocess\\iemailmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6B1C10C-9798-4B4C-95B5-AEA77E338A4C}|AddressBookBL\\AddressBookBL.csproj|solutionrelative:addressbookbl\\emailsenderprocess\\iemailmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6B1C10C-9798-4B4C-95B5-AEA77E338A4C}|AddressBookBL\\AddressBookBL.csproj|c:\\users\\mustafa\\desktop\\edutech_assignments\\assignments\\aspnetmvc_core_assignment\\addressbook\\addressbookbl\\emailsenderprocess\\emailmessagemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6B1C10C-9798-4B4C-95B5-AEA77E338A4C}|AddressBookBL\\AddressBookBL.csproj|solutionrelative:addressbookbl\\emailsenderprocess\\emailmessagemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28586C84-DCF8-4D61-AAEC-BA2736E139FC}|AddressBookEL\\AddressBookEL.csproj|c:\\users\\mustafa\\desktop\\edutech_assignments\\assignments\\aspnetmvc_core_assignment\\addressbook\\addressbookel\\mappings\\maps.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28586C84-DCF8-4D61-AAEC-BA2736E139FC}|AddressBookEL\\AddressBookEL.csproj|solutionrelative:addressbookel\\mappings\\maps.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{508A20C1-1BDD-48C5-983B-CEA30F560746}|AddressBookAPI\\AddressBookAPI.csproj|c:\\users\\mustafa\\desktop\\edutech_assignments\\assignments\\aspnetmvc_core_assignment\\addressbook\\addressbookapi\\jwtprocess\\tokenmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{508A20C1-1BDD-48C5-983B-CEA30F560746}|AddressBookAPI\\AddressBookAPI.csproj|solutionrelative:addressbookapi\\jwtprocess\\tokenmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{508A20C1-1BDD-48C5-983B-CEA30F560746}|AddressBookAPI\\AddressBookAPI.csproj|c:\\users\\mustafa\\desktop\\edutech_assignments\\assignments\\aspnetmvc_core_assignment\\addressbook\\addressbookapi\\jwtprocess\\itokenmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{508A20C1-1BDD-48C5-983B-CEA30F560746}|AddressBookAPI\\AddressBookAPI.csproj|solutionrelative:addressbookapi\\jwtprocess\\itokenmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6B1C10C-9798-4B4C-95B5-AEA77E338A4C}|AddressBookBL\\AddressBookBL.csproj|c:\\users\\mustafa\\desktop\\edutech_assignments\\assignments\\aspnetmvc_core_assignment\\addressbook\\addressbookbl\\emailsenderprocess\\emailmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6B1C10C-9798-4B4C-95B5-AEA77E338A4C}|AddressBookBL\\AddressBookBL.csproj|solutionrelative:addressbookbl\\emailsenderprocess\\emailmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6B1C10C-9798-4B4C-95B5-AEA77E338A4C}|AddressBookBL\\AddressBookBL.csproj|c:\\users\\mustafa\\desktop\\edutech_assignments\\assignments\\aspnetmvc_core_assignment\\addressbook\\addressbookbl\\interfacesofmanagers\\ibasemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6B1C10C-9798-4B4C-95B5-AEA77E338A4C}|AddressBookBL\\AddressBookBL.csproj|solutionrelative:addressbookbl\\interfacesofmanagers\\ibasemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6B1C10C-9798-4B4C-95B5-AEA77E338A4C}|AddressBookBL\\AddressBookBL.csproj|c:\\users\\mustafa\\desktop\\edutech_assignments\\assignments\\aspnetmvc_core_assignment\\addressbook\\addressbookbl\\interfacesofmanagers\\icitymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6B1C10C-9798-4B4C-95B5-AEA77E338A4C}|AddressBookBL\\AddressBookBL.csproj|solutionrelative:addressbookbl\\interfacesofmanagers\\icitymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6B1C10C-9798-4B4C-95B5-AEA77E338A4C}|AddressBookBL\\AddressBookBL.csproj|c:\\users\\mustafa\\desktop\\edutech_assignments\\assignments\\aspnetmvc_core_assignment\\addressbook\\addressbookbl\\interfacesofmanagers\\idistrictmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6B1C10C-9798-4B4C-95B5-AEA77E338A4C}|AddressBookBL\\AddressBookBL.csproj|solutionrelative:addressbookbl\\interfacesofmanagers\\idistrictmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6B1C10C-9798-4B4C-95B5-AEA77E338A4C}|AddressBookBL\\AddressBookBL.csproj|c:\\users\\mustafa\\desktop\\edutech_assignments\\assignments\\aspnetmvc_core_assignment\\addressbook\\addressbookbl\\interfacesofmanagers\\iuseraddressmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6B1C10C-9798-4B4C-95B5-AEA77E338A4C}|AddressBookBL\\AddressBookBL.csproj|solutionrelative:addressbookbl\\interfacesofmanagers\\iuseraddressmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6B1C10C-9798-4B4C-95B5-AEA77E338A4C}|AddressBookBL\\AddressBookBL.csproj|c:\\users\\mustafa\\desktop\\edutech_assignments\\assignments\\aspnetmvc_core_assignment\\addressbook\\addressbookbl\\interfacesofmanagers\\iloggermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6B1C10C-9798-4B4C-95B5-AEA77E338A4C}|AddressBookBL\\AddressBookBL.csproj|solutionrelative:addressbookbl\\interfacesofmanagers\\iloggermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6B1C10C-9798-4B4C-95B5-AEA77E338A4C}|AddressBookBL\\AddressBookBL.csproj|c:\\users\\mustafa\\desktop\\edutech_assignments\\assignments\\aspnetmvc_core_assignment\\addressbook\\addressbookbl\\interfacesofmanagers\\ineigborhoodmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6B1C10C-9798-4B4C-95B5-AEA77E338A4C}|AddressBookBL\\AddressBookBL.csproj|solutionrelative:addressbookbl\\interfacesofmanagers\\ineigborhoodmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6B1C10C-9798-4B4C-95B5-AEA77E338A4C}|AddressBookBL\\AddressBookBL.csproj|c:\\users\\mustafa\\desktop\\edutech_assignments\\assignments\\aspnetmvc_core_assignment\\addressbook\\addressbookbl\\implementationofmanagers\\useraddressmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6B1C10C-9798-4B4C-95B5-AEA77E338A4C}|AddressBookBL\\AddressBookBL.csproj|solutionrelative:addressbookbl\\implementationofmanagers\\useraddressmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6B1C10C-9798-4B4C-95B5-AEA77E338A4C}|AddressBookBL\\AddressBookBL.csproj|c:\\users\\mustafa\\desktop\\edutech_assignments\\assignments\\aspnetmvc_core_assignment\\addressbook\\addressbookbl\\implementationofmanagers\\neigborhoodmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6B1C10C-9798-4B4C-95B5-AEA77E338A4C}|AddressBookBL\\AddressBookBL.csproj|solutionrelative:addressbookbl\\implementationofmanagers\\neigborhoodmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6B1C10C-9798-4B4C-95B5-AEA77E338A4C}|AddressBookBL\\AddressBookBL.csproj|c:\\users\\mustafa\\desktop\\edutech_assignments\\assignments\\aspnetmvc_core_assignment\\addressbook\\addressbookbl\\implementationofmanagers\\loggermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6B1C10C-9798-4B4C-95B5-AEA77E338A4C}|AddressBookBL\\AddressBookBL.csproj|solutionrelative:addressbookbl\\implementationofmanagers\\loggermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6B1C10C-9798-4B4C-95B5-AEA77E338A4C}|AddressBookBL\\AddressBookBL.csproj|c:\\users\\mustafa\\desktop\\edutech_assignments\\assignments\\aspnetmvc_core_assignment\\addressbook\\addressbookbl\\implementationofmanagers\\citymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6B1C10C-9798-4B4C-95B5-AEA77E338A4C}|AddressBookBL\\AddressBookBL.csproj|solutionrelative:addressbookbl\\implementationofmanagers\\citymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6B1C10C-9798-4B4C-95B5-AEA77E338A4C}|AddressBookBL\\AddressBookBL.csproj|c:\\users\\mustafa\\desktop\\edutech_assignments\\assignments\\aspnetmvc_core_assignment\\addressbook\\addressbookbl\\implementationofmanagers\\generalmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6B1C10C-9798-4B4C-95B5-AEA77E338A4C}|AddressBookBL\\AddressBookBL.csproj|solutionrelative:addressbookbl\\implementationofmanagers\\generalmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6B1C10C-9798-4B4C-95B5-AEA77E338A4C}|AddressBookBL\\AddressBookBL.csproj|c:\\users\\mustafa\\desktop\\edutech_assignments\\assignments\\aspnetmvc_core_assignment\\addressbook\\addressbookbl\\implementationofmanagers\\districtmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6B1C10C-9798-4B4C-95B5-AEA77E338A4C}|AddressBookBL\\AddressBookBL.csproj|solutionrelative:addressbookbl\\implementationofmanagers\\districtmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6B1C10C-9798-4B4C-95B5-AEA77E338A4C}|AddressBookBL\\AddressBookBL.csproj|c:\\users\\mustafa\\desktop\\edutech_assignments\\assignments\\aspnetmvc_core_assignment\\addressbook\\addressbookbl\\implementationofmanagers\\basemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6B1C10C-9798-4B4C-95B5-AEA77E338A4C}|AddressBookBL\\AddressBookBL.csproj|solutionrelative:addressbookbl\\implementationofmanagers\\basemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AddressBookAPI",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\Edutech_Assignments\\ASSIGNMENTS\\ASPNETMVC_CORE_ASSIGNMENT\\AddressBook\\AddressBookAPI\\AddressBookAPI.csproj",
+              "RelativeDocumentMoniker": "AddressBookAPI\\AddressBookAPI.csproj",
+              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\Edutech_Assignments\\ASSIGNMENTS\\ASPNETMVC_CORE_ASSIGNMENT\\AddressBook\\AddressBookAPI\\AddressBookAPI.csproj*",
+              "RelativeToolTip": "AddressBookAPI\\AddressBookAPI.csproj*",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAgwCMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-25T14:27:40.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IBaseEntity.cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\Edutech_Assignments\\ASSIGNMENTS\\ASPNETMVC_CORE_ASSIGNMENT\\AddressBook\\AddressBookEL\\Entities\\IBaseEntity.cs",
+              "RelativeDocumentMoniker": "AddressBookEL\\Entities\\IBaseEntity.cs",
+              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\Edutech_Assignments\\ASSIGNMENTS\\ASPNETMVC_CORE_ASSIGNMENT\\AddressBook\\AddressBookEL\\Entities\\IBaseEntity.cs",
+              "RelativeToolTip": "AddressBookEL\\Entities\\IBaseEntity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T14:27:04.514Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "District.cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\Edutech_Assignments\\ASSIGNMENTS\\ASPNETMVC_CORE_ASSIGNMENT\\AddressBook\\AddressBookEL\\Entities\\District.cs",
+              "RelativeDocumentMoniker": "AddressBookEL\\Entities\\District.cs",
+              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\Edutech_Assignments\\ASSIGNMENTS\\ASPNETMVC_CORE_ASSIGNMENT\\AddressBook\\AddressBookEL\\Entities\\District.cs",
+              "RelativeToolTip": "AddressBookEL\\Entities\\District.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T14:26:53.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AddressBookEL.csproj",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\Edutech_Assignments\\ASSIGNMENTS\\ASPNETMVC_CORE_ASSIGNMENT\\AddressBook\\AddressBookEL\\AddressBookEL.csproj",
+              "RelativeDocumentMoniker": "AddressBookEL\\AddressBookEL.csproj",
+              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\Edutech_Assignments\\ASSIGNMENTS\\ASPNETMVC_CORE_ASSIGNMENT\\AddressBook\\AddressBookEL\\AddressBookEL.csproj",
+              "RelativeToolTip": "AddressBookEL\\AddressBookEL.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAABaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-25T14:26:34.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "City.cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\Edutech_Assignments\\ASSIGNMENTS\\ASPNETMVC_CORE_ASSIGNMENT\\AddressBook\\AddressBookEL\\Entities\\City.cs",
+              "RelativeDocumentMoniker": "AddressBookEL\\Entities\\City.cs",
+              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\Edutech_Assignments\\ASSIGNMENTS\\ASPNETMVC_CORE_ASSIGNMENT\\AddressBook\\AddressBookEL\\Entities\\City.cs",
+              "RelativeToolTip": "AddressBookEL\\Entities\\City.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T14:26:17.998Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\Edutech_Assignments\\ASSIGNMENTS\\ASPNETMVC_CORE_ASSIGNMENT\\AddressBook\\AddressBookWebUI\\Program.cs",
+              "RelativeDocumentMoniker": "AddressBookWebUI\\Program.cs",
+              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\Edutech_Assignments\\ASSIGNMENTS\\ASPNETMVC_CORE_ASSIGNMENT\\AddressBook\\AddressBookWebUI\\Program.cs",
+              "RelativeToolTip": "AddressBookWebUI\\Program.cs",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T14:25:29.675Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\Edutech_Assignments\\ASSIGNMENTS\\ASPNETMVC_CORE_ASSIGNMENT\\AddressBook\\AddressBookAPI\\Program.cs",
+              "RelativeDocumentMoniker": "AddressBookAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\Edutech_Assignments\\ASSIGNMENTS\\ASPNETMVC_CORE_ASSIGNMENT\\AddressBook\\AddressBookAPI\\Program.cs",
+              "RelativeToolTip": "AddressBookAPI\\Program.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T14:24:59.548Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\Edutech_Assignments\\ASSIGNMENTS\\ASPNETMVC_CORE_ASSIGNMENT\\AddressBook\\AddressBookAPI\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "AddressBookAPI\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\Edutech_Assignments\\ASSIGNMENTS\\ASPNETMVC_CORE_ASSIGNMENT\\AddressBook\\AddressBookAPI\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "AddressBookAPI\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAowFUAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T12:21:25.533Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IEmailManager.cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\Edutech_Assignments\\ASSIGNMENTS\\ASPNETMVC_CORE_ASSIGNMENT\\AddressBook\\AddressBookBL\\EmailSenderProcess\\IEmailManager.cs",
+              "RelativeDocumentMoniker": "AddressBookBL\\EmailSenderProcess\\IEmailManager.cs",
+              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\Edutech_Assignments\\ASSIGNMENTS\\ASPNETMVC_CORE_ASSIGNMENT\\AddressBook\\AddressBookBL\\EmailSenderProcess\\IEmailManager.cs",
+              "RelativeToolTip": "AddressBookBL\\EmailSenderProcess\\IEmailManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T11:36:44.943Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EmailMessageModel.cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\Edutech_Assignments\\ASSIGNMENTS\\ASPNETMVC_CORE_ASSIGNMENT\\AddressBook\\AddressBookBL\\EmailSenderProcess\\EmailMessageModel.cs",
+              "RelativeDocumentMoniker": "AddressBookBL\\EmailSenderProcess\\EmailMessageModel.cs",
+              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\Edutech_Assignments\\ASSIGNMENTS\\ASPNETMVC_CORE_ASSIGNMENT\\AddressBook\\AddressBookBL\\EmailSenderProcess\\EmailMessageModel.cs",
+              "RelativeToolTip": "AddressBookBL\\EmailSenderProcess\\EmailMessageModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T11:36:43.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Maps.cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\Edutech_Assignments\\ASSIGNMENTS\\ASPNETMVC_CORE_ASSIGNMENT\\AddressBook\\AddressBookEL\\Mappings\\Maps.cs",
+              "RelativeDocumentMoniker": "AddressBookEL\\Mappings\\Maps.cs",
+              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\Edutech_Assignments\\ASSIGNMENTS\\ASPNETMVC_CORE_ASSIGNMENT\\AddressBook\\AddressBookEL\\Mappings\\Maps.cs",
+              "RelativeToolTip": "AddressBookEL\\Mappings\\Maps.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T18:22:50.44Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "TokenManager.cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\Edutech_Assignments\\ASSIGNMENTS\\ASPNETMVC_CORE_ASSIGNMENT\\AddressBook\\AddressBookAPI\\JWTProcess\\TokenManager.cs",
+              "RelativeDocumentMoniker": "AddressBookAPI\\JWTProcess\\TokenManager.cs",
+              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\Edutech_Assignments\\ASSIGNMENTS\\ASPNETMVC_CORE_ASSIGNMENT\\AddressBook\\AddressBookAPI\\JWTProcess\\TokenManager.cs",
+              "RelativeToolTip": "AddressBookAPI\\JWTProcess\\TokenManager.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAA6wAkAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T06:35:27.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ITokenManager.cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\Edutech_Assignments\\ASSIGNMENTS\\ASPNETMVC_CORE_ASSIGNMENT\\AddressBook\\AddressBookAPI\\JWTProcess\\ITokenManager.cs",
+              "RelativeDocumentMoniker": "AddressBookAPI\\JWTProcess\\ITokenManager.cs",
+              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\Edutech_Assignments\\ASSIGNMENTS\\ASPNETMVC_CORE_ASSIGNMENT\\AddressBook\\AddressBookAPI\\JWTProcess\\ITokenManager.cs",
+              "RelativeToolTip": "AddressBookAPI\\JWTProcess\\ITokenManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T06:35:21.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "EmailManager.cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\Edutech_Assignments\\ASSIGNMENTS\\ASPNETMVC_CORE_ASSIGNMENT\\AddressBook\\AddressBookBL\\EmailSenderProcess\\EmailManager.cs",
+              "RelativeDocumentMoniker": "AddressBookBL\\EmailSenderProcess\\EmailManager.cs",
+              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\Edutech_Assignments\\ASSIGNMENTS\\ASPNETMVC_CORE_ASSIGNMENT\\AddressBook\\AddressBookBL\\EmailSenderProcess\\EmailManager.cs",
+              "RelativeToolTip": "AddressBookBL\\EmailSenderProcess\\EmailManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T06:35:07.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IBaseManager.cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\Edutech_Assignments\\ASSIGNMENTS\\ASPNETMVC_CORE_ASSIGNMENT\\AddressBook\\AddressBookBL\\InterfacesOfManagers\\IBaseManager.cs",
+              "RelativeDocumentMoniker": "AddressBookBL\\InterfacesOfManagers\\IBaseManager.cs",
+              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\Edutech_Assignments\\ASSIGNMENTS\\ASPNETMVC_CORE_ASSIGNMENT\\AddressBook\\AddressBookBL\\InterfacesOfManagers\\IBaseManager.cs",
+              "RelativeToolTip": "AddressBookBL\\InterfacesOfManagers\\IBaseManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T06:34:20.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ICityManager.cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\Edutech_Assignments\\ASSIGNMENTS\\ASPNETMVC_CORE_ASSIGNMENT\\AddressBook\\AddressBookBL\\InterfacesOfManagers\\ICityManager.cs",
+              "RelativeDocumentMoniker": "AddressBookBL\\InterfacesOfManagers\\ICityManager.cs",
+              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\Edutech_Assignments\\ASSIGNMENTS\\ASPNETMVC_CORE_ASSIGNMENT\\AddressBook\\AddressBookBL\\InterfacesOfManagers\\ICityManager.cs",
+              "RelativeToolTip": "AddressBookBL\\InterfacesOfManagers\\ICityManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T06:34:18.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IDistrictManager.cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\Edutech_Assignments\\ASSIGNMENTS\\ASPNETMVC_CORE_ASSIGNMENT\\AddressBook\\AddressBookBL\\InterfacesOfManagers\\IDistrictManager.cs",
+              "RelativeDocumentMoniker": "AddressBookBL\\InterfacesOfManagers\\IDistrictManager.cs",
+              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\Edutech_Assignments\\ASSIGNMENTS\\ASPNETMVC_CORE_ASSIGNMENT\\AddressBook\\AddressBookBL\\InterfacesOfManagers\\IDistrictManager.cs",
+              "RelativeToolTip": "AddressBookBL\\InterfacesOfManagers\\IDistrictManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T06:34:18.161Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IUserAddressManager.cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\Edutech_Assignments\\ASSIGNMENTS\\ASPNETMVC_CORE_ASSIGNMENT\\AddressBook\\AddressBookBL\\InterfacesOfManagers\\IUserAddressManager.cs",
+              "RelativeDocumentMoniker": "AddressBookBL\\InterfacesOfManagers\\IUserAddressManager.cs",
+              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\Edutech_Assignments\\ASSIGNMENTS\\ASPNETMVC_CORE_ASSIGNMENT\\AddressBook\\AddressBookBL\\InterfacesOfManagers\\IUserAddressManager.cs",
+              "RelativeToolTip": "AddressBookBL\\InterfacesOfManagers\\IUserAddressManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T06:34:09.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ILoggerManager.cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\Edutech_Assignments\\ASSIGNMENTS\\ASPNETMVC_CORE_ASSIGNMENT\\AddressBook\\AddressBookBL\\InterfacesOfManagers\\ILoggerManager.cs",
+              "RelativeDocumentMoniker": "AddressBookBL\\InterfacesOfManagers\\ILoggerManager.cs",
+              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\Edutech_Assignments\\ASSIGNMENTS\\ASPNETMVC_CORE_ASSIGNMENT\\AddressBook\\AddressBookBL\\InterfacesOfManagers\\ILoggerManager.cs",
+              "RelativeToolTip": "AddressBookBL\\InterfacesOfManagers\\ILoggerManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T06:34:08.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "INeigborhoodManager.cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\Edutech_Assignments\\ASSIGNMENTS\\ASPNETMVC_CORE_ASSIGNMENT\\AddressBook\\AddressBookBL\\InterfacesOfManagers\\INeigborhoodManager.cs",
+              "RelativeDocumentMoniker": "AddressBookBL\\InterfacesOfManagers\\INeigborhoodManager.cs",
+              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\Edutech_Assignments\\ASSIGNMENTS\\ASPNETMVC_CORE_ASSIGNMENT\\AddressBook\\AddressBookBL\\InterfacesOfManagers\\INeigborhoodManager.cs",
+              "RelativeToolTip": "AddressBookBL\\InterfacesOfManagers\\INeigborhoodManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T06:34:07.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "UserAddressManager.cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\Edutech_Assignments\\ASSIGNMENTS\\ASPNETMVC_CORE_ASSIGNMENT\\AddressBook\\AddressBookBL\\ImplementationofManagers\\UserAddressManager.cs",
+              "RelativeDocumentMoniker": "AddressBookBL\\ImplementationofManagers\\UserAddressManager.cs",
+              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\Edutech_Assignments\\ASSIGNMENTS\\ASPNETMVC_CORE_ASSIGNMENT\\AddressBook\\AddressBookBL\\ImplementationofManagers\\UserAddressManager.cs",
+              "RelativeToolTip": "AddressBookBL\\ImplementationofManagers\\UserAddressManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T06:33:21.301Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "NeigborhoodManager.cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\Edutech_Assignments\\ASSIGNMENTS\\ASPNETMVC_CORE_ASSIGNMENT\\AddressBook\\AddressBookBL\\ImplementationofManagers\\NeigborhoodManager.cs",
+              "RelativeDocumentMoniker": "AddressBookBL\\ImplementationofManagers\\NeigborhoodManager.cs",
+              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\Edutech_Assignments\\ASSIGNMENTS\\ASPNETMVC_CORE_ASSIGNMENT\\AddressBook\\AddressBookBL\\ImplementationofManagers\\NeigborhoodManager.cs",
+              "RelativeToolTip": "AddressBookBL\\ImplementationofManagers\\NeigborhoodManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T06:33:05.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "LoggerManager.cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\Edutech_Assignments\\ASSIGNMENTS\\ASPNETMVC_CORE_ASSIGNMENT\\AddressBook\\AddressBookBL\\ImplementationofManagers\\LoggerManager.cs",
+              "RelativeDocumentMoniker": "AddressBookBL\\ImplementationofManagers\\LoggerManager.cs",
+              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\Edutech_Assignments\\ASSIGNMENTS\\ASPNETMVC_CORE_ASSIGNMENT\\AddressBook\\AddressBookBL\\ImplementationofManagers\\LoggerManager.cs",
+              "RelativeToolTip": "AddressBookBL\\ImplementationofManagers\\LoggerManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T06:32:59.476Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "CityManager.cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\Edutech_Assignments\\ASSIGNMENTS\\ASPNETMVC_CORE_ASSIGNMENT\\AddressBook\\AddressBookBL\\ImplementationofManagers\\CityManager.cs",
+              "RelativeDocumentMoniker": "AddressBookBL\\ImplementationofManagers\\CityManager.cs",
+              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\Edutech_Assignments\\ASSIGNMENTS\\ASPNETMVC_CORE_ASSIGNMENT\\AddressBook\\AddressBookBL\\ImplementationofManagers\\CityManager.cs",
+              "RelativeToolTip": "AddressBookBL\\ImplementationofManagers\\CityManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T06:32:58.293Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "GeneralManager.cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\Edutech_Assignments\\ASSIGNMENTS\\ASPNETMVC_CORE_ASSIGNMENT\\AddressBook\\AddressBookBL\\ImplementationofManagers\\GeneralManager.cs",
+              "RelativeDocumentMoniker": "AddressBookBL\\ImplementationofManagers\\GeneralManager.cs",
+              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\Edutech_Assignments\\ASSIGNMENTS\\ASPNETMVC_CORE_ASSIGNMENT\\AddressBook\\AddressBookBL\\ImplementationofManagers\\GeneralManager.cs",
+              "RelativeToolTip": "AddressBookBL\\ImplementationofManagers\\GeneralManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T06:32:53.541Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "DistrictManager.cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\Edutech_Assignments\\ASSIGNMENTS\\ASPNETMVC_CORE_ASSIGNMENT\\AddressBook\\AddressBookBL\\ImplementationofManagers\\DistrictManager.cs",
+              "RelativeDocumentMoniker": "AddressBookBL\\ImplementationofManagers\\DistrictManager.cs",
+              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\Edutech_Assignments\\ASSIGNMENTS\\ASPNETMVC_CORE_ASSIGNMENT\\AddressBook\\AddressBookBL\\ImplementationofManagers\\DistrictManager.cs",
+              "RelativeToolTip": "AddressBookBL\\ImplementationofManagers\\DistrictManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T06:32:52.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "BaseManager.cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\Edutech_Assignments\\ASSIGNMENTS\\ASPNETMVC_CORE_ASSIGNMENT\\AddressBook\\AddressBookBL\\ImplementationofManagers\\BaseManager.cs",
+              "RelativeDocumentMoniker": "AddressBookBL\\ImplementationofManagers\\BaseManager.cs",
+              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\Edutech_Assignments\\ASSIGNMENTS\\ASPNETMVC_CORE_ASSIGNMENT\\AddressBook\\AddressBookBL\\ImplementationofManagers\\BaseManager.cs",
+              "RelativeToolTip": "AddressBookBL\\ImplementationofManagers\\BaseManager.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAwwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T06:32:39.76Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

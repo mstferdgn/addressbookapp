@@ -1,0 +1,50 @@
+﻿@using AddressBookEL.IdentityModels
+@model AppUser?
+
+<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
+
+    <div class="container">
+        <a class="navbar-brand" href="index.html">AddressBookEDU<span>.</span></a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsFurni" style="background-color:black;">
+            <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="/Home/Index">ANASAYFA</a>
+                </li>
+                <li><a class="nav-link" href="/Home/Address">Adresler</a></li>
+                <li><a class="nav-link" href="/Account/Profile">Profile</a></li>
+                <li><a class="nav-link" href="services.html">Services</a></li>
+                <li class="active"><a class="nav-link" href="contact.html">Contact us</a></li>
+            </ul>
+
+            <ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
+                @if (Model != null)
+                {
+                    <li>
+                        <a class="nav-link" href="/Account/Profile">
+                            Hoşgeldin <strong>@Model.Name @Model.Surname</strong>
+
+
+                        </a>
+                    </li>
+                    <li><a class="nav-link" href="/Account/Logout">ÇIKIŞ YAP</a></li>
+
+                }
+                else
+                {
+                    <li><a class="nav-link" href="/Account/Login">GİRİŞ YAP</a></li>
+
+                }
+
+
+                <li><a class="nav-link" href="#"><img src="/furni/images/user.svg"></a></li>
+                <li><a class="nav-link" href="cart.html"><img src="/furni/images/cart.svg"></a></li>
+            </ul>
+        </div>
+    </div>
+
+</nav>

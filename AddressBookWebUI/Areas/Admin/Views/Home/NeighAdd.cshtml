@@ -1,0 +1,150 @@
+﻿@model NeigborhoodVM
+@{
+    ViewData["Title"] = "NeighAdd";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+@if (!string.IsNullOrEmpty(ViewBag.NeighAddSuccessMsg))
+{
+    <div class="alert alert-info alert-dismissible fade show" role="alert" id="succesDivAlert">
+        <strong>BİLGİ!</strong>  @ViewBag.NeighAddSuccessMsg
+        <button type="button" class="close btn btn-sm "
+                data-dismiss="alert" aria-label="Close" id="closeSuccessAlertbtn">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+}
+
+@if (!string.IsNullOrEmpty(ViewBag.NeighAddFailedMsg))
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>BİLGİ!</strong>  @ViewBag.NeighAddFailedMsg
+        <button type="button" class="close btn btn-sm "
+                data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+}
+
+<div class="row">
+    <form asp-area="Admin" asp-controller="Home" asp-action="NeighAdd">
+        <div asp-validation-summary="All" id="validationDiv"
+             style="color:red;margin-bottom:10px"></div>
+
+        <div class="row" style="margin-bottom:10px">
+            <div class="col-6">
+                <label>İL: </label>
+                <select class="form-control" id="citySelect" asp-for="CityId">
+                    <option value="0">İl seçiniz</option>
+                    @foreach (var item in ViewBag.Cities)
+                    {
+                        <option value="@item.Id">@item.Name</option>
+                    }
+                </select>
+            </div>
+
+            <div class="col-6">
+                <label>İLÇE: </label>
+                <select class="form-control" id="districtSelect" asp-for="DistrictId">
+                </select>
+            </div>
+        </div>
+
+
+        <div class="row" style="margin-bottom:10px">
+            <div class="col-6">
+                <label>Mahalle Adı:</label>
+                <input type="text" class="form-control" id="neigName"  asp-for="Name" />
+            </div>
+
+            <div class="col-6">
+                <button type="submit" class="btn btn-info">KAYDET</button>
+            </div>
+        </div>
+
+
+    </form>
+</div>
+
+@section scriptler {
+    <script>
+        $(document).ready(function () {
+            $("#districtSelect").prop("disabled", true);
+            $("#neigName").prop("disabled", true);
+            $("#neigName").val("");
+
+
+            $("#citySelect").on("change", function () {
+             
+                var cityid = $(this).val();
+                if (cityid > 0) {
+
+
+                    $.ajax({
+                        url: "/Home/GetDistrictsofCity?cityid=" + cityid,
+                        type: 'GET',
+                        dataType: 'json', // added data type
+                        success: function (res) {
+                            console.log(res.data);
+                            if (res.success) {
+
+                                $("#districtSelect").prop("disabled", false);
+                                $("#districtSelect").empty();
+                                $("#districtSelect").prepend("<option value='0' selected>İlçe Seçiniz</option>");
+                                console.log("geldi mi");
+                                if (res.data.length > 0) {
+
+                                    for (let i = 0; i < res.data.length; i++) {
+                                        console.log(res.data[i].name);
+                                        if (res.data[i].name.
+                                            includes("Havaliman")) { continue; }
+
+                                        $("#districtSelect").append($("<option />")
+                                            .val(res.data[i].id).text(res.data[i].name));
+
+                                    } // for bitti
+
+
+                                 
+
+                                }
+                            }
+                            else {
+                                alert(res.message);
+
+                            }
+
+
+                        }, // success bitti
+                        error: function (err) {
+                            alert(res.message);
+                        } // error bitti
+                    });
+
+                } // if bitti
+
+            }); //change bitti
+
+        });
+
+        $("#districtSelect").on("change", function () {
+
+            var districtid = $(this).val();
+            $("#neigName").prop("disabled", false);
+        });
+
+        $("#closeSuccessAlertbtn").click(function(){
+
+            console.log(document.getElementById("succesDivAlert").classList);
+            if (document.getElementById("succesDivAlert").classList.contains("show")) {
+               
+                document.getElementById("succesDivAlert").classList.remove("show");
+           }
+
+        });
+    </script>
+
+
+
+
+}

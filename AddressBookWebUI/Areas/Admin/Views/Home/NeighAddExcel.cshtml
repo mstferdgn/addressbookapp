@@ -1,0 +1,38 @@
+﻿@* Admine login yazdığımız zaman buraya model tanımlamamız gerekebilir
+ *@
+
+
+@{
+    ViewData["Title"] = "NeighAddExcel";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+@if (!string.IsNullOrEmpty(ViewBag.NeighAddExcelSuccessMsg))
+{
+    <div class="alert alert-info alert-dismissible fade show" role="alert">
+        <strong>BİLGİ!</strong>  @ViewBag.NeighAddExcelSuccessMsg
+        <button type="button" class="close btn btn-sm "              
+                data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+}
+
+
+<div class="row">
+    <label> Excel dosyasını seçiniz: </label>
+
+    <form asp-action="NeighAddExcel" asp-controller="Home" asp-area="Admin" method="post"
+          enctype="multipart/form-data">
+
+        <div asp-validation-summary="All" id="validationDiv"
+             style="color:red;margin-bottom:10px"></div>
+
+
+        <input type="file" class="form-control" id="neighExcelInput" name="excelFile" />
+        <button type="submit" class="btn btn-info">YÜKLE</button>
+
+    </form>
+</div>
+
+

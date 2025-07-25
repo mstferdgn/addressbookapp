@@ -1,0 +1,679 @@
+2024-08-22 09:40:49.829 +03:00  WRN  The property 'Id' on entity type 'City' is of type 'byte', but is set up to use a SQL Server identity column; this requires that values starting at 255 and counting down will be used for temporary key values. A temporary key value is needed for every entity inserted in a single call to 'SaveChanges'. Care must be taken that these values do not collide with real key values.
+2024-08-22 09:40:51.037 +03:00  INF  Executed DbCommand (82ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Description], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-08-22 09:40:51.094 +03:00  INF  Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Description], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-08-22 09:40:51.098 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Description], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-08-22 09:40:51.099 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Description], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-08-22 09:40:51.099 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Description], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-08-22 09:40:51.099 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Description], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-08-22 09:40:51.100 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Description], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-08-22 09:40:51.101 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Description], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-08-22 09:40:52.394 +03:00  INF  Executed DbCommand (4ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.406 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.407 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.407 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.408 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.409 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.410 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.411 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.411 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.411 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.412 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.412 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.413 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.413 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.414 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.415 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.415 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.416 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.416 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.417 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.417 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.418 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.418 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.419 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.419 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.420 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.420 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.420 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.421 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.421 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.421 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.422 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.422 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.422 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.423 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.423 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.423 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.424 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.424 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.425 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.425 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.426 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.426 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.426 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.426 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.427 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.427 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.428 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.428 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.428 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.429 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.429 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.429 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.430 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.430 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.431 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.432 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.432 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.433 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.433 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.434 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.434 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.435 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.435 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.436 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.436 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.437 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.437 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.438 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.439 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.439 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.440 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.440 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.441 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.442 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.443 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.443 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.444 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.446 +03:00  INF  Executed DbCommand (1ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.449 +03:00  INF  Executed DbCommand (3ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.450 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-08-22 09:40:52.493 +03:00  INF  User profile is available. Using 'C:\Users\BetulAksan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-22 09:40:52.612 +03:00  INF  Now listening on: http://localhost:5273
+2024-08-22 09:40:52.615 +03:00  INF  Application started. Press Ctrl+C to shut down.
+2024-08-22 09:40:52.615 +03:00  INF  Hosting environment: Development
+2024-08-22 09:40:52.615 +03:00  INF  Content root path: C:\Users\BetulAksan\source\repos\AddressBook\AddressBookWebUI\
+2024-08-22 09:40:53.387 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/ - -
+2024-08-22 09:40:53.871 +03:00  INF  Executing endpoint 'AddressBookWebUI.Controllers.HomeController.Index (AddressBookWebUI)'
+2024-08-22 09:40:53.926 +03:00  INF  Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller AddressBookWebUI.Controllers.HomeController (AddressBookWebUI).
+2024-08-22 09:40:53.963 +03:00  INF  Executing ViewResult, running view Index.
+2024-08-22 09:40:54.167 +03:00  INF  Executed ViewResult - view Index executed in 201.8992ms.
+2024-08-22 09:40:54.177 +03:00  INF  Executed action AddressBookWebUI.Controllers.HomeController.Index (AddressBookWebUI) in 243.1296ms
+2024-08-22 09:40:54.177 +03:00  INF  Executed endpoint 'AddressBookWebUI.Controllers.HomeController.Index (AddressBookWebUI)'
+2024-08-22 09:40:54.212 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/_vs/browserLink - -
+2024-08-22 09:40:54.214 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/ - - - 200 - text/html;+charset=utf-8 838.8739ms
+2024-08-22 09:40:54.234 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - -
+2024-08-22 09:40:54.242 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - - - 200 13768 application/javascript;+charset=utf-8 8.4387ms
+2024-08-22 09:40:54.332 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 120.2881ms
+2024-08-22 09:40:54.430 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - -
+2024-08-22 09:40:54.431 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - - - 200 13768 application/javascript;+charset=utf-8 0.4353ms
+2024-08-22 09:40:59.214 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/Account/Login - -
+2024-08-22 09:40:59.238 +03:00  INF  Executing endpoint 'AddressBookWebUI.Controllers.AccountController.Login (AddressBookWebUI)'
+2024-08-22 09:40:59.244 +03:00  INF  Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller AddressBookWebUI.Controllers.AccountController (AddressBookWebUI).
+2024-08-22 09:40:59.350 +03:00  INF  Login sayfası çağrıldı!
+2024-08-22 09:40:59.486 +03:00  INF  Executing ViewResult, running view Login.
+2024-08-22 09:40:59.600 +03:00  INF  Executed ViewResult - view Login executed in 114.962ms.
+2024-08-22 09:40:59.600 +03:00  INF  Executed action AddressBookWebUI.Controllers.AccountController.Login (AddressBookWebUI) in 355.9096ms
+2024-08-22 09:40:59.601 +03:00  INF  Executed endpoint 'AddressBookWebUI.Controllers.AccountController.Login (AddressBookWebUI)'
+2024-08-22 09:40:59.603 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/Account/Login - - - 200 - text/html;+charset=utf-8 388.3840ms
+2024-08-22 09:40:59.637 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - -
+2024-08-22 09:40:59.639 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - - - 200 13768 application/javascript;+charset=utf-8 0.9773ms
+2024-08-22 09:40:59.640 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/_vs/browserLink - -
+2024-08-22 09:40:59.656 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - -
+2024-08-22 09:40:59.656 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - - - 200 13768 application/javascript;+charset=utf-8 0.4017ms
+2024-08-22 09:40:59.694 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 54.0430ms
+2024-08-22 09:41:05.367 +03:00  INF  Request starting HTTP/1.1 POST http://localhost:5273/Account/Login application/x-www-form-urlencoded 224
+2024-08-22 09:41:05.385 +03:00  INF  Executing endpoint 'AddressBookWebUI.Controllers.AccountController.Login (AddressBookWebUI)'
+2024-08-22 09:41:05.419 +03:00  INF  Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(System.String, System.String) on controller AddressBookWebUI.Controllers.AccountController (AddressBookWebUI).
+2024-08-22 09:41:05.630 +03:00  INF  Executed DbCommand (11ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[BirthDate], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfilePicture], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-08-22 09:41:05.658 +03:00  INF  Executed DbCommand (6ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[BirthDate], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfilePicture], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-08-22 09:41:05.890 +03:00  INF  Executed DbCommand (9ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2024-08-22 09:41:06.017 +03:00  INF  Executed DbCommand (3ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2024-08-22 09:41:06.036 +03:00  INF  Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2024-08-22 09:41:06.038 +03:00  INF  Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Description], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-08-22 09:41:06.058 +03:00  INF  Executed DbCommand (4ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2024-08-22 09:41:06.066 +03:00  INF  Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Description], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-08-22 09:41:06.073 +03:00  INF  Executed DbCommand (4ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2024-08-22 09:41:06.095 +03:00  INF  AuthenticationScheme: Identity.Application signed in.
+2024-08-22 09:41:06.105 +03:00  INF  Executing RedirectResult, redirecting to /Admin.
+2024-08-22 09:41:06.105 +03:00  INF  Executed action AddressBookWebUI.Controllers.AccountController.Login (AddressBookWebUI) in 686.1994ms
+2024-08-22 09:41:06.105 +03:00  INF  Executed endpoint 'AddressBookWebUI.Controllers.AccountController.Login (AddressBookWebUI)'
+2024-08-22 09:41:06.128 +03:00  INF  Request finished HTTP/1.1 POST http://localhost:5273/Account/Login application/x-www-form-urlencoded 224 - 302 0 - 761.2688ms
+2024-08-22 09:41:06.129 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/Admin - -
+2024-08-22 09:41:06.148 +03:00  INF  Executing endpoint 'AddressBookWebUI.Areas.Admin.Controllers.HomeController.Index (AddressBookWebUI)'
+2024-08-22 09:41:06.151 +03:00  INF  Route matched with {area = "Admin", action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller AddressBookWebUI.Areas.Admin.Controllers.HomeController (AddressBookWebUI).
+2024-08-22 09:41:06.205 +03:00  INF  Executed DbCommand (5ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[BirthDate], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfilePicture], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-08-22 09:41:06.228 +03:00  INF  Executed DbCommand (5ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Description], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2024-08-22 09:41:06.287 +03:00  INF  Executed DbCommand (3ms) [Parameters=[@__p_0='?' (Size = 450), @__p_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE [a].[UserId] = @__p_0 AND [a].[RoleId] = @__p_1
+2024-08-22 09:41:06.482 +03:00  INF  Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [AspNetUsers] AS [a]
+2024-08-22 09:41:06.588 +03:00  INF  Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[AddressTitle], [u].[CityId], [u].[CreatedDate], [u].[DistrictId], [u].[FullAddress], [u].[IsDeleted], [u].[NeigborhoodId], [u].[PostalCode], [u].[UserId]
+FROM [USERADRESS] AS [u]
+2024-08-22 09:41:06.781 +03:00  INF  Executed DbCommand (13ms) [Parameters=[@__weekStart_Day_0='?' (DbType = Int32), @__weekEnd_Day_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[AddressTitle], [u].[CityId], [u].[CreatedDate], [u].[DistrictId], [u].[FullAddress], [u].[IsDeleted], [u].[NeigborhoodId], [u].[PostalCode], [u].[UserId], [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode], [d].[Id], [d].[CityId], [d].[CreatedDate], [d].[IsDeleted], [d].[Name], [n].[Id], [n].[CityId], [n].[CreatedDate], [n].[DistrictId], [n].[IsDeleted], [n].[Name], [a].[Id], [a].[AccessFailedCount], [a].[BirthDate], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfilePicture], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [USERADRESS] AS [u]
+INNER JOIN [CITY] AS [c] ON [u].[CityId] = [c].[Id]
+INNER JOIN [DISTRICT] AS [d] ON [u].[DistrictId] = [d].[Id]
+INNER JOIN [NEIGBORHOOD] AS [n] ON [u].[NeigborhoodId] = [n].[Id]
+INNER JOIN [AspNetUsers] AS [a] ON [u].[UserId] = [a].[Id]
+WHERE DATEPART(year, [u].[CreatedDate]) = DATEPART(year, GETDATE()) AND DATEPART(month, [u].[CreatedDate]) = DATEPART(month, GETDATE()) AND DATEPART(day, [u].[CreatedDate]) >= @__weekStart_Day_0 AND DATEPART(day, [u].[CreatedDate]) <= @__weekEnd_Day_1
+2024-08-22 09:41:06.866 +03:00  INF  Executed DbCommand (12ms) [Parameters=[@__lastDayofMonth_Day_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[AddressTitle], [u].[CityId], [u].[CreatedDate], [u].[DistrictId], [u].[FullAddress], [u].[IsDeleted], [u].[NeigborhoodId], [u].[PostalCode], [u].[UserId], [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode], [d].[Id], [d].[CityId], [d].[CreatedDate], [d].[IsDeleted], [d].[Name], [n].[Id], [n].[CityId], [n].[CreatedDate], [n].[DistrictId], [n].[IsDeleted], [n].[Name], [a].[Id], [a].[AccessFailedCount], [a].[BirthDate], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfilePicture], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [USERADRESS] AS [u]
+INNER JOIN [CITY] AS [c] ON [u].[CityId] = [c].[Id]
+INNER JOIN [DISTRICT] AS [d] ON [u].[DistrictId] = [d].[Id]
+INNER JOIN [NEIGBORHOOD] AS [n] ON [u].[NeigborhoodId] = [n].[Id]
+INNER JOIN [AspNetUsers] AS [a] ON [u].[UserId] = [a].[Id]
+WHERE DATEPART(year, [u].[CreatedDate]) = DATEPART(year, GETDATE()) AND DATEPART(month, [u].[CreatedDate]) = DATEPART(month, GETDATE()) AND DATEPART(day, [u].[CreatedDate]) >= 1 AND DATEPART(day, [u].[CreatedDate]) <= @__lastDayofMonth_Day_0
+2024-08-22 09:41:06.873 +03:00  INF  Executing ViewResult, running view Index.
+2024-08-22 09:41:06.986 +03:00  INF  Executed DbCommand (7ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[BirthDate], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfilePicture], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-08-22 09:41:06.991 +03:00  INF  Executed DbCommand (2ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Description], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2024-08-22 09:41:06.998 +03:00  INF  Executed DbCommand (1ms) [Parameters=[@__p_0='?' (Size = 450), @__p_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE [a].[UserId] = @__p_0 AND [a].[RoleId] = @__p_1
+2024-08-22 09:41:07.002 +03:00  INF  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[AddressTitle], [u].[CityId], [u].[CreatedDate], [u].[DistrictId], [u].[FullAddress], [u].[IsDeleted], [u].[NeigborhoodId], [u].[PostalCode], [u].[UserId]
+FROM [USERADRESS] AS [u]
+2024-08-22 09:41:07.005 +03:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [AspNetUsers] AS [a]
+2024-08-22 09:41:07.033 +03:00  INF  Executed DbCommand (5ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[BirthDate], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfilePicture], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-08-22 09:41:07.039 +03:00  INF  Executed DbCommand (3ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Description], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2024-08-22 09:41:07.044 +03:00  INF  Executed DbCommand (1ms) [Parameters=[@__p_0='?' (Size = 450), @__p_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE [a].[UserId] = @__p_0 AND [a].[RoleId] = @__p_1
+2024-08-22 09:41:07.067 +03:00  INF  Executed ViewResult - view Index executed in 196.2052ms.
+2024-08-22 09:41:07.067 +03:00  INF  Executed action AddressBookWebUI.Areas.Admin.Controllers.HomeController.Index (AddressBookWebUI) in 915.6458ms
+2024-08-22 09:41:07.067 +03:00  INF  Executed endpoint 'AddressBookWebUI.Areas.Admin.Controllers.HomeController.Index (AddressBookWebUI)'
+2024-08-22 09:41:07.067 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/Admin - - - 200 - text/html;+charset=utf-8 938.0041ms
+2024-08-22 09:41:07.174 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - -
+2024-08-22 09:41:07.174 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - - - 200 13768 application/javascript;+charset=utf-8 0.1596ms
+2024-08-22 09:41:07.175 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/_vs/browserLink - -
+2024-08-22 09:41:07.186 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 10.5489ms
+2024-08-22 09:41:07.299 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/Admin/Home/GetIndexStatisticsChartData - -
+2024-08-22 09:41:07.299 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/Admin/Home/GetBarChartData - -
+2024-08-22 09:41:07.303 +03:00  INF  Executing endpoint 'AddressBookWebUI.Areas.Admin.Controllers.HomeController.GetBarChartData (AddressBookWebUI)'
+2024-08-22 09:41:07.303 +03:00  INF  Executing endpoint 'AddressBookWebUI.Areas.Admin.Controllers.HomeController.GetIndexStatisticsChartData (AddressBookWebUI)'
+2024-08-22 09:41:07.308 +03:00  INF  Route matched with {area = "Admin", action = "GetIndexStatisticsChartData", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.JsonResult GetIndexStatisticsChartData() on controller AddressBookWebUI.Areas.Admin.Controllers.HomeController (AddressBookWebUI).
+2024-08-22 09:41:07.308 +03:00  INF  Route matched with {area = "Admin", action = "GetBarChartData", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.JsonResult GetBarChartData() on controller AddressBookWebUI.Areas.Admin.Controllers.HomeController (AddressBookWebUI).
+2024-08-22 09:41:07.335 +03:00  INF  Executed DbCommand (1ms) [Parameters=[@__weekStart_Day_0='?' (DbType = Int32), @__weekEnd_Day_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[AddressTitle], [u].[CityId], [u].[CreatedDate], [u].[DistrictId], [u].[FullAddress], [u].[IsDeleted], [u].[NeigborhoodId], [u].[PostalCode], [u].[UserId], [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode], [d].[Id], [d].[CityId], [d].[CreatedDate], [d].[IsDeleted], [d].[Name], [n].[Id], [n].[CityId], [n].[CreatedDate], [n].[DistrictId], [n].[IsDeleted], [n].[Name], [a].[Id], [a].[AccessFailedCount], [a].[BirthDate], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfilePicture], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [USERADRESS] AS [u]
+INNER JOIN [CITY] AS [c] ON [u].[CityId] = [c].[Id]
+INNER JOIN [DISTRICT] AS [d] ON [u].[DistrictId] = [d].[Id]
+INNER JOIN [NEIGBORHOOD] AS [n] ON [u].[NeigborhoodId] = [n].[Id]
+INNER JOIN [AspNetUsers] AS [a] ON [u].[UserId] = [a].[Id]
+WHERE DATEPART(year, [u].[CreatedDate]) = DATEPART(year, GETDATE()) AND DATEPART(month, [u].[CreatedDate]) = DATEPART(month, GETDATE()) AND DATEPART(day, [u].[CreatedDate]) >= @__weekStart_Day_0 AND DATEPART(day, [u].[CreatedDate]) <= @__weekEnd_Day_1
+2024-08-22 09:41:07.415 +03:00  INF  Executed DbCommand (14ms) [Parameters=[@__weekStart_Day_0='?' (DbType = Int32), @__weekEnd_Day_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[AddressTitle], [u].[CityId], [u].[CreatedDate], [u].[DistrictId], [u].[FullAddress], [u].[IsDeleted], [u].[NeigborhoodId], [u].[PostalCode], [u].[UserId], [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode], [d].[Id], [d].[CityId], [d].[CreatedDate], [d].[IsDeleted], [d].[Name], [n].[Id], [n].[CityId], [n].[CreatedDate], [n].[DistrictId], [n].[IsDeleted], [n].[Name], [a].[Id], [a].[AccessFailedCount], [a].[BirthDate], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfilePicture], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [USERADRESS] AS [u]
+INNER JOIN [AspNetUsers] AS [a] ON [u].[UserId] = [a].[Id]
+INNER JOIN [CITY] AS [c] ON [u].[CityId] = [c].[Id]
+INNER JOIN [DISTRICT] AS [d] ON [u].[DistrictId] = [d].[Id]
+INNER JOIN [NEIGBORHOOD] AS [n] ON [u].[NeigborhoodId] = [n].[Id]
+WHERE DATEPART(year, [u].[CreatedDate]) = DATEPART(year, GETDATE()) AND DATEPART(month, [u].[CreatedDate]) = DATEPART(month, GETDATE()) AND DATEPART(day, [u].[CreatedDate]) >= @__weekStart_Day_0 AND DATEPART(day, [u].[CreatedDate]) <= @__weekEnd_Day_1 AND [a].[Gender] = 1
+2024-08-22 09:41:07.417 +03:00  INF  Executed DbCommand (3ms) [Parameters=[@__platecodes_0='?' (Size = 8000) (DbType = Binary)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id]
+FROM [CITY] AS [c]
+WHERE CHARINDEX(CAST(CONVERT(tinyint, [c].[PlateCode]) AS varbinary(max)), @__platecodes_0) > 0
+2024-08-22 09:41:07.451 +03:00  INF  Executed DbCommand (13ms) [Parameters=[@__weekStart_Day_0='?' (DbType = Int32), @__weekEnd_Day_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[AddressTitle], [u].[CityId], [u].[CreatedDate], [u].[DistrictId], [u].[FullAddress], [u].[IsDeleted], [u].[NeigborhoodId], [u].[PostalCode], [u].[UserId], [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode], [d].[Id], [d].[CityId], [d].[CreatedDate], [d].[IsDeleted], [d].[Name], [n].[Id], [n].[CityId], [n].[CreatedDate], [n].[DistrictId], [n].[IsDeleted], [n].[Name], [a].[Id], [a].[AccessFailedCount], [a].[BirthDate], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfilePicture], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [USERADRESS] AS [u]
+INNER JOIN [AspNetUsers] AS [a] ON [u].[UserId] = [a].[Id]
+INNER JOIN [CITY] AS [c] ON [u].[CityId] = [c].[Id]
+INNER JOIN [DISTRICT] AS [d] ON [u].[DistrictId] = [d].[Id]
+INNER JOIN [NEIGBORHOOD] AS [n] ON [u].[NeigborhoodId] = [n].[Id]
+WHERE DATEPART(year, [u].[CreatedDate]) = DATEPART(year, GETDATE()) AND DATEPART(month, [u].[CreatedDate]) = DATEPART(month, GETDATE()) AND DATEPART(day, [u].[CreatedDate]) >= @__weekStart_Day_0 AND DATEPART(day, [u].[CreatedDate]) <= @__weekEnd_Day_1 AND [a].[Gender] = 2
+2024-08-22 09:41:07.454 +03:00  INF  Executing JsonResult, writing value of type '<>f__AnonymousType2`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[AddressBookWebUI.Areas.Admin.Models.StatisticsChartViewModel, AddressBookWebUI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-22 09:41:07.476 +03:00  INF  Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[AddressTitle], [u].[CityId], [u].[CreatedDate], [u].[DistrictId], [u].[FullAddress], [u].[IsDeleted], [u].[NeigborhoodId], [u].[PostalCode], [u].[UserId], [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode], [d].[Id], [d].[CityId], [d].[CreatedDate], [d].[IsDeleted], [d].[Name], [n].[Id], [n].[CityId], [n].[CreatedDate], [n].[DistrictId], [n].[IsDeleted], [n].[Name], [a].[Id], [a].[AccessFailedCount], [a].[BirthDate], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfilePicture], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [USERADRESS] AS [u]
+INNER JOIN [CITY] AS [c] ON [u].[CityId] = [c].[Id]
+INNER JOIN [DISTRICT] AS [d] ON [u].[DistrictId] = [d].[Id]
+INNER JOIN [NEIGBORHOOD] AS [n] ON [u].[NeigborhoodId] = [n].[Id]
+INNER JOIN [AspNetUsers] AS [a] ON [u].[UserId] = [a].[Id]
+WHERE [u].[CityId] IN (CAST(10 AS tinyint), CAST(11 AS tinyint), CAST(16 AS tinyint), CAST(17 AS tinyint), CAST(22 AS tinyint), CAST(34 AS tinyint), CAST(39 AS tinyint), CAST(41 AS tinyint), CAST(54 AS tinyint), CAST(59 AS tinyint), CAST(77 AS tinyint))
+2024-08-22 09:41:07.478 +03:00  INF  Executed DbCommand (1ms) [Parameters=[@__platecodes_0='?' (Size = 8000) (DbType = Binary)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id]
+FROM [CITY] AS [c]
+WHERE CHARINDEX(CAST(CONVERT(tinyint, [c].[PlateCode]) AS varbinary(max)), @__platecodes_0) > 0
+2024-08-22 09:41:07.512 +03:00  INF  Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[AddressTitle], [u].[CityId], [u].[CreatedDate], [u].[DistrictId], [u].[FullAddress], [u].[IsDeleted], [u].[NeigborhoodId], [u].[PostalCode], [u].[UserId], [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode], [d].[Id], [d].[CityId], [d].[CreatedDate], [d].[IsDeleted], [d].[Name], [n].[Id], [n].[CityId], [n].[CreatedDate], [n].[DistrictId], [n].[IsDeleted], [n].[Name], [a].[Id], [a].[AccessFailedCount], [a].[BirthDate], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfilePicture], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [USERADRESS] AS [u]
+INNER JOIN [CITY] AS [c] ON [u].[CityId] = [c].[Id]
+INNER JOIN [DISTRICT] AS [d] ON [u].[DistrictId] = [d].[Id]
+INNER JOIN [NEIGBORHOOD] AS [n] ON [u].[NeigborhoodId] = [n].[Id]
+INNER JOIN [AspNetUsers] AS [a] ON [u].[UserId] = [a].[Id]
+WHERE [u].[CityId] IN (CAST(6 AS tinyint), CAST(18 AS tinyint), CAST(26 AS tinyint), CAST(38 AS tinyint), CAST(40 AS tinyint), CAST(42 AS tinyint), CAST(50 AS tinyint), CAST(51 AS tinyint), CAST(58 AS tinyint), CAST(66 AS tinyint), CAST(68 AS tinyint), CAST(70 AS tinyint), CAST(71 AS tinyint))
+2024-08-22 09:41:07.517 +03:00  INF  Executed DbCommand (2ms) [Parameters=[@__platecodes_0='?' (Size = 8000) (DbType = Binary)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id]
+FROM [CITY] AS [c]
+WHERE CHARINDEX(CAST(CONVERT(tinyint, [c].[PlateCode]) AS varbinary(max)), @__platecodes_0) > 0
+2024-08-22 09:41:07.577 +03:00  INF  Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[AddressTitle], [u].[CityId], [u].[CreatedDate], [u].[DistrictId], [u].[FullAddress], [u].[IsDeleted], [u].[NeigborhoodId], [u].[PostalCode], [u].[UserId], [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode], [d].[Id], [d].[CityId], [d].[CreatedDate], [d].[IsDeleted], [d].[Name], [n].[Id], [n].[CityId], [n].[CreatedDate], [n].[DistrictId], [n].[IsDeleted], [n].[Name], [a].[Id], [a].[AccessFailedCount], [a].[BirthDate], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfilePicture], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [USERADRESS] AS [u]
+INNER JOIN [CITY] AS [c] ON [u].[CityId] = [c].[Id]
+INNER JOIN [DISTRICT] AS [d] ON [u].[DistrictId] = [d].[Id]
+INNER JOIN [NEIGBORHOOD] AS [n] ON [u].[NeigborhoodId] = [n].[Id]
+INNER JOIN [AspNetUsers] AS [a] ON [u].[UserId] = [a].[Id]
+WHERE [u].[CityId] IN (CAST(5 AS tinyint), CAST(8 AS tinyint), CAST(14 AS tinyint), CAST(19 AS tinyint), CAST(28 AS tinyint), CAST(29 AS tinyint), CAST(37 AS tinyint), CAST(52 AS tinyint), CAST(53 AS tinyint), CAST(55 AS tinyint), CAST(57 AS tinyint), CAST(60 AS tinyint), CAST(61 AS tinyint), CAST(67 AS tinyint), CAST(69 AS tinyint), CAST(74 AS tinyint), CAST(78 AS tinyint), CAST(81 AS tinyint))
+2024-08-22 09:41:07.579 +03:00  INF  Executed DbCommand (1ms) [Parameters=[@__platecodes_0='?' (Size = 8000) (DbType = Binary)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id]
+FROM [CITY] AS [c]
+WHERE CHARINDEX(CAST(CONVERT(tinyint, [c].[PlateCode]) AS varbinary(max)), @__platecodes_0) > 0
+2024-08-22 09:41:07.583 +03:00  INF  Executed action AddressBookWebUI.Areas.Admin.Controllers.HomeController.GetIndexStatisticsChartData (AddressBookWebUI) in 274.2267ms
+2024-08-22 09:41:07.583 +03:00  INF  Executed endpoint 'AddressBookWebUI.Areas.Admin.Controllers.HomeController.GetIndexStatisticsChartData (AddressBookWebUI)'
+2024-08-22 09:41:07.583 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/Admin/Home/GetIndexStatisticsChartData - - - 200 - application/json;+charset=utf-8 283.5706ms
+2024-08-22 09:41:07.643 +03:00  INF  Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[AddressTitle], [u].[CityId], [u].[CreatedDate], [u].[DistrictId], [u].[FullAddress], [u].[IsDeleted], [u].[NeigborhoodId], [u].[PostalCode], [u].[UserId], [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode], [d].[Id], [d].[CityId], [d].[CreatedDate], [d].[IsDeleted], [d].[Name], [n].[Id], [n].[CityId], [n].[CreatedDate], [n].[DistrictId], [n].[IsDeleted], [n].[Name], [a].[Id], [a].[AccessFailedCount], [a].[BirthDate], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfilePicture], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [USERADRESS] AS [u]
+INNER JOIN [CITY] AS [c] ON [u].[CityId] = [c].[Id]
+INNER JOIN [DISTRICT] AS [d] ON [u].[DistrictId] = [d].[Id]
+INNER JOIN [NEIGBORHOOD] AS [n] ON [u].[NeigborhoodId] = [n].[Id]
+INNER JOIN [AspNetUsers] AS [a] ON [u].[UserId] = [a].[Id]
+WHERE [u].[CityId] IN (CAST(1 AS tinyint), CAST(7 AS tinyint), CAST(15 AS tinyint), CAST(31 AS tinyint), CAST(32 AS tinyint), CAST(33 AS tinyint), CAST(46 AS tinyint), CAST(80 AS tinyint))
+2024-08-22 09:41:07.646 +03:00  INF  Executed DbCommand (1ms) [Parameters=[@__platecodes_0='?' (Size = 8000) (DbType = Binary)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id]
+FROM [CITY] AS [c]
+WHERE CHARINDEX(CAST(CONVERT(tinyint, [c].[PlateCode]) AS varbinary(max)), @__platecodes_0) > 0
+2024-08-22 09:41:07.695 +03:00  INF  Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[AddressTitle], [u].[CityId], [u].[CreatedDate], [u].[DistrictId], [u].[FullAddress], [u].[IsDeleted], [u].[NeigborhoodId], [u].[PostalCode], [u].[UserId], [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode], [d].[Id], [d].[CityId], [d].[CreatedDate], [d].[IsDeleted], [d].[Name], [n].[Id], [n].[CityId], [n].[CreatedDate], [n].[DistrictId], [n].[IsDeleted], [n].[Name], [a].[Id], [a].[AccessFailedCount], [a].[BirthDate], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfilePicture], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [USERADRESS] AS [u]
+INNER JOIN [CITY] AS [c] ON [u].[CityId] = [c].[Id]
+INNER JOIN [DISTRICT] AS [d] ON [u].[DistrictId] = [d].[Id]
+INNER JOIN [NEIGBORHOOD] AS [n] ON [u].[NeigborhoodId] = [n].[Id]
+INNER JOIN [AspNetUsers] AS [a] ON [u].[UserId] = [a].[Id]
+WHERE [u].[CityId] IN (CAST(4 AS tinyint), CAST(12 AS tinyint), CAST(13 AS tinyint), CAST(23 AS tinyint), CAST(24 AS tinyint), CAST(25 AS tinyint), CAST(30 AS tinyint), CAST(36 AS tinyint), CAST(44 AS tinyint), CAST(49 AS tinyint), CAST(62 AS tinyint), CAST(65 AS tinyint), CAST(75 AS tinyint), CAST(76 AS tinyint))
+2024-08-22 09:41:07.698 +03:00  INF  Executed DbCommand (1ms) [Parameters=[@__platecodes_0='?' (Size = 8000) (DbType = Binary)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id]
+FROM [CITY] AS [c]
+WHERE CHARINDEX(CAST(CONVERT(tinyint, [c].[PlateCode]) AS varbinary(max)), @__platecodes_0) > 0
+2024-08-22 09:41:07.764 +03:00  INF  Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[AddressTitle], [u].[CityId], [u].[CreatedDate], [u].[DistrictId], [u].[FullAddress], [u].[IsDeleted], [u].[NeigborhoodId], [u].[PostalCode], [u].[UserId], [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode], [d].[Id], [d].[CityId], [d].[CreatedDate], [d].[IsDeleted], [d].[Name], [n].[Id], [n].[CityId], [n].[CreatedDate], [n].[DistrictId], [n].[IsDeleted], [n].[Name], [a].[Id], [a].[AccessFailedCount], [a].[BirthDate], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfilePicture], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [USERADRESS] AS [u]
+INNER JOIN [CITY] AS [c] ON [u].[CityId] = [c].[Id]
+INNER JOIN [DISTRICT] AS [d] ON [u].[DistrictId] = [d].[Id]
+INNER JOIN [NEIGBORHOOD] AS [n] ON [u].[NeigborhoodId] = [n].[Id]
+INNER JOIN [AspNetUsers] AS [a] ON [u].[UserId] = [a].[Id]
+WHERE [u].[CityId] IN (CAST(3 AS tinyint), CAST(9 AS tinyint), CAST(20 AS tinyint), CAST(35 AS tinyint), CAST(43 AS tinyint), CAST(45 AS tinyint), CAST(48 AS tinyint), CAST(64 AS tinyint))
+2024-08-22 09:41:07.769 +03:00  INF  Executed DbCommand (2ms) [Parameters=[@__platecodes_0='?' (Size = 8000) (DbType = Binary)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id]
+FROM [CITY] AS [c]
+WHERE CHARINDEX(CAST(CONVERT(tinyint, [c].[PlateCode]) AS varbinary(max)), @__platecodes_0) > 0
+2024-08-22 09:41:07.814 +03:00  INF  Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[AddressTitle], [u].[CityId], [u].[CreatedDate], [u].[DistrictId], [u].[FullAddress], [u].[IsDeleted], [u].[NeigborhoodId], [u].[PostalCode], [u].[UserId], [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode], [d].[Id], [d].[CityId], [d].[CreatedDate], [d].[IsDeleted], [d].[Name], [n].[Id], [n].[CityId], [n].[CreatedDate], [n].[DistrictId], [n].[IsDeleted], [n].[Name], [a].[Id], [a].[AccessFailedCount], [a].[BirthDate], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfilePicture], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [USERADRESS] AS [u]
+INNER JOIN [CITY] AS [c] ON [u].[CityId] = [c].[Id]
+INNER JOIN [DISTRICT] AS [d] ON [u].[DistrictId] = [d].[Id]
+INNER JOIN [NEIGBORHOOD] AS [n] ON [u].[NeigborhoodId] = [n].[Id]
+INNER JOIN [AspNetUsers] AS [a] ON [u].[UserId] = [a].[Id]
+WHERE [u].[CityId] IN (CAST(2 AS tinyint), CAST(21 AS tinyint), CAST(27 AS tinyint), CAST(47 AS tinyint), CAST(56 AS tinyint), CAST(63 AS tinyint), CAST(72 AS tinyint), CAST(73 AS tinyint), CAST(79 AS tinyint))
+2024-08-22 09:41:07.815 +03:00  INF  Executing JsonResult, writing value of type '<>f__AnonymousType3`4[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-08-22 09:41:07.820 +03:00  INF  Executed action AddressBookWebUI.Areas.Admin.Controllers.HomeController.GetBarChartData (AddressBookWebUI) in 511.1295ms
+2024-08-22 09:41:07.820 +03:00  INF  Executed endpoint 'AddressBookWebUI.Areas.Admin.Controllers.HomeController.GetBarChartData (AddressBookWebUI)'
+2024-08-22 09:41:07.820 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/Admin/Home/GetBarChartData - - - 200 - application/json;+charset=utf-8 520.8151ms
+2024-08-22 09:41:47.684 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/Home/Index - -
+2024-08-22 09:41:47.717 +03:00  INF  Executing endpoint 'AddressBookWebUI.Controllers.HomeController.Index (AddressBookWebUI)'
+2024-08-22 09:41:47.717 +03:00  INF  Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller AddressBookWebUI.Controllers.HomeController (AddressBookWebUI).
+2024-08-22 09:41:47.718 +03:00  INF  Executing ViewResult, running view Index.
+2024-08-22 09:41:47.732 +03:00  INF  Executed DbCommand (11ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[BirthDate], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfilePicture], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-08-22 09:41:47.733 +03:00  INF  Executed ViewResult - view Index executed in 14.837ms.
+2024-08-22 09:41:47.733 +03:00  INF  Executed action AddressBookWebUI.Controllers.HomeController.Index (AddressBookWebUI) in 15.5859ms
+2024-08-22 09:41:47.733 +03:00  INF  Executed endpoint 'AddressBookWebUI.Controllers.HomeController.Index (AddressBookWebUI)'
+2024-08-22 09:41:47.733 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/Home/Index - - - 200 - text/html;+charset=utf-8 53.8142ms
+2024-08-22 09:41:47.781 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - -
+2024-08-22 09:41:47.781 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - - - 200 13768 application/javascript;+charset=utf-8 0.2669ms
+2024-08-22 09:41:47.783 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/_vs/browserLink - -
+2024-08-22 09:41:47.807 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 24.1378ms
+2024-08-22 09:41:47.836 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - -
+2024-08-22 09:41:47.837 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - - - 200 13768 application/javascript;+charset=utf-8 0.6070ms
+2024-08-22 09:41:48.985 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/Account/Logout - -
+2024-08-22 09:41:49.000 +03:00  INF  Executing endpoint 'AddressBookWebUI.Controllers.AccountController.Logout (AddressBookWebUI)'
+2024-08-22 09:41:49.002 +03:00  INF  Route matched with {action = "Logout", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Logout() on controller AddressBookWebUI.Controllers.AccountController (AddressBookWebUI).
+2024-08-22 09:41:51.357 +03:00  INF  Çıkış yapıldı
+2024-08-22 09:41:53.129 +03:00  INF  AuthenticationScheme: Identity.Application signed out.
+2024-08-22 09:41:53.132 +03:00  INF  AuthenticationScheme: Identity.External signed out.
+2024-08-22 09:41:53.132 +03:00  INF  AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2024-08-22 09:41:53.133 +03:00  INF  Executing RedirectResult, redirecting to /Account/Login.
+2024-08-22 09:41:53.133 +03:00  INF  Executed action AddressBookWebUI.Controllers.AccountController.Logout (AddressBookWebUI) in 4130.6921ms
+2024-08-22 09:41:53.133 +03:00  INF  Executed endpoint 'AddressBookWebUI.Controllers.AccountController.Logout (AddressBookWebUI)'
+2024-08-22 09:41:53.133 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/Account/Logout - - - 302 0 - 4148.7054ms
+2024-08-22 09:41:53.140 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/Account/Login - -
+2024-08-22 09:41:53.145 +03:00  INF  Executing endpoint 'AddressBookWebUI.Controllers.AccountController.Login (AddressBookWebUI)'
+2024-08-22 09:41:53.145 +03:00  INF  Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller AddressBookWebUI.Controllers.AccountController (AddressBookWebUI).
+2024-08-22 09:41:53.145 +03:00  INF  Login sayfası çağrıldı!
+2024-08-22 09:41:53.175 +03:00  INF  Executing ViewResult, running view Login.
+2024-08-22 09:41:53.177 +03:00  INF  Executed ViewResult - view Login executed in 4.2652ms.
+2024-08-22 09:41:53.178 +03:00  INF  Executed action AddressBookWebUI.Controllers.AccountController.Login (AddressBookWebUI) in 32.8482ms
+2024-08-22 09:41:53.178 +03:00  INF  Executed endpoint 'AddressBookWebUI.Controllers.AccountController.Login (AddressBookWebUI)'
+2024-08-22 09:41:53.178 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/Account/Login - - - 200 - text/html;+charset=utf-8 38.0226ms
+2024-08-22 09:41:53.249 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - -
+2024-08-22 09:41:53.249 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - - - 200 13768 application/javascript;+charset=utf-8 0.4178ms
+2024-08-22 09:41:53.252 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/_vs/browserLink - -
+2024-08-22 09:41:53.268 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - -
+2024-08-22 09:41:53.269 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - - - 200 13768 application/javascript;+charset=utf-8 1.3755ms
+2024-08-22 09:41:53.286 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 32.3421ms

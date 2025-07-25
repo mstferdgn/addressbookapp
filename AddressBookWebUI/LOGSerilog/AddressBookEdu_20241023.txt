@@ -1,0 +1,520 @@
+2024-10-23 11:14:05.833 +03:00  WRN  The property 'Id' on entity type 'City' is of type 'byte', but is set up to use a SQL Server identity column; this requires that values starting at 255 and counting down will be used for temporary key values. A temporary key value is needed for every entity inserted in a single call to 'SaveChanges'. Care must be taken that these values do not collide with real key values.
+2024-10-23 11:14:07.423 +03:00  ERR  Failed executing DbCommand (197ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Description], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-10-23 11:14:07.559 +03:00  ERR  An exception occurred while iterating over the results of a query for context type 'AddressBookDL.ContextInfo.AddressBookContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'AspNetRoles'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:8ae56ac2-dd79-4368-9627-96de6517c6c2
+Error Number:208,State:1,Class:16Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'AspNetRoles'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:8ae56ac2-dd79-4368-9627-96de6517c6c2
+Error Number:208,State:1,Class:16
+
+2024-10-23 11:14:09.835 +03:00  ERR  Failed executing DbCommand (50ms) [Parameters=[@__plakaKod_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsDeleted], [c].[Name], [c].[PlateCode]
+FROM [CITY] AS [c]
+WHERE [c].[PlateCode] = @__plakaKod_0
+2024-10-23 11:14:09.849 +03:00  ERR  An exception occurred while iterating over the results of a query for context type 'AddressBookDL.ContextInfo.AddressBookContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'CITY'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:8ae56ac2-dd79-4368-9627-96de6517c6c2
+Error Number:208,State:1,Class:16Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'CITY'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:8ae56ac2-dd79-4368-9627-96de6517c6c2
+Error Number:208,State:1,Class:16
+
+2024-10-23 11:14:09.942 +03:00  INF  User profile is available. Using 'C:\Users\Mustafa\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-10-23 11:14:10.122 +03:00  INF  Now listening on: http://localhost:5273
+2024-10-23 11:14:10.125 +03:00  INF  Application started. Press Ctrl+C to shut down.
+2024-10-23 11:14:10.125 +03:00  INF  Hosting environment: Development
+2024-10-23 11:14:10.126 +03:00  INF  Content root path: C:\Users\Mustafa\Desktop\Edutech_Assignments\ASSIGNMENTS\ASPNETMVC_CORE_ASSIGNMENT\AddressBook\AddressBookWebUI\
+2024-10-23 11:14:11.641 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/ - -
+2024-10-23 11:14:11.888 +03:00  INF  Executing endpoint 'AddressBookWebUI.Controllers.HomeController.Index (AddressBookWebUI)'
+2024-10-23 11:14:11.903 +03:00  INF  Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller AddressBookWebUI.Controllers.HomeController (AddressBookWebUI).
+2024-10-23 11:14:11.916 +03:00  INF  Executing ViewResult, running view Index.
+2024-10-23 11:14:11.998 +03:00  INF  Executed ViewResult - view Index executed in 80.5742ms.
+2024-10-23 11:14:12.000 +03:00  INF  Executed action AddressBookWebUI.Controllers.HomeController.Index (AddressBookWebUI) in 95.8333ms
+2024-10-23 11:14:12.000 +03:00  INF  Executed endpoint 'AddressBookWebUI.Controllers.HomeController.Index (AddressBookWebUI)'
+2024-10-23 11:14:12.012 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/ - - - 200 - text/html;+charset=utf-8 379.7029ms
+2024-10-23 11:14:12.030 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/furni/images/user.svg - -
+2024-10-23 11:14:12.030 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/furni/css/style.css - -
+2024-10-23 11:14:12.036 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/furni/css/tiny-slider.css - -
+2024-10-23 11:14:12.043 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/furni/images/cart.svg - -
+2024-10-23 11:14:12.045 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/furni/css/bootstrap.min.css - -
+2024-10-23 11:14:12.073 +03:00  INF  Sending file. Request path: '/furni/images/cart.svg'. Physical path: 'C:\Users\Mustafa\Desktop\Edutech_Assignments\ASSIGNMENTS\ASPNETMVC_CORE_ASSIGNMENT\AddressBook\AddressBookWebUI\wwwroot\furni\images\cart.svg'
+2024-10-23 11:14:12.073 +03:00  INF  Sending file. Request path: '/furni/css/tiny-slider.css'. Physical path: 'C:\Users\Mustafa\Desktop\Edutech_Assignments\ASSIGNMENTS\ASPNETMVC_CORE_ASSIGNMENT\AddressBook\AddressBookWebUI\wwwroot\furni\css\tiny-slider.css'
+2024-10-23 11:14:12.073 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/furni/images/cart.svg - - - 200 814 image/svg+xml 30.5761ms
+2024-10-23 11:14:12.073 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/furni/css/tiny-slider.css - - - 200 2177 text/css 37.5684ms
+2024-10-23 11:14:12.088 +03:00  INF  Sending file. Request path: '/furni/css/bootstrap.min.css'. Physical path: 'C:\Users\Mustafa\Desktop\Edutech_Assignments\ASSIGNMENTS\ASPNETMVC_CORE_ASSIGNMENT\AddressBook\AddressBookWebUI\wwwroot\furni\css\bootstrap.min.css'
+2024-10-23 11:14:12.088 +03:00  INF  Sending file. Request path: '/furni/css/style.css'. Physical path: 'C:\Users\Mustafa\Desktop\Edutech_Assignments\ASSIGNMENTS\ASPNETMVC_CORE_ASSIGNMENT\AddressBook\AddressBookWebUI\wwwroot\furni\css\style.css'
+2024-10-23 11:14:12.088 +03:00  INF  Sending file. Request path: '/furni/images/user.svg'. Physical path: 'C:\Users\Mustafa\Desktop\Edutech_Assignments\ASSIGNMENTS\ASPNETMVC_CORE_ASSIGNMENT\AddressBook\AddressBookWebUI\wwwroot\furni\images\user.svg'
+2024-10-23 11:14:12.092 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/furni/images/user.svg - - - 200 555 image/svg+xml 63.8896ms
+2024-10-23 11:14:12.092 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/furni/css/style.css - - - 200 20707 text/css 61.7219ms
+2024-10-23 11:14:12.092 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/furni/css/bootstrap.min.css - - - 200 163826 text/css 46.9395ms
+2024-10-23 11:14:12.100 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/furni/images/envelope-outline.svg - -
+2024-10-23 11:14:12.108 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/furni/js/bootstrap.bundle.min.js - -
+2024-10-23 11:14:12.113 +03:00  INF  Sending file. Request path: '/furni/images/envelope-outline.svg'. Physical path: 'C:\Users\Mustafa\Desktop\Edutech_Assignments\ASSIGNMENTS\ASPNETMVC_CORE_ASSIGNMENT\AddressBook\AddressBookWebUI\wwwroot\furni\images\envelope-outline.svg'
+2024-10-23 11:14:12.113 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/furni/images/envelope-outline.svg - - - 200 890 image/svg+xml 13.8975ms
+2024-10-23 11:14:12.117 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/furni/js/tiny-slider.js - -
+2024-10-23 11:14:12.149 +03:00  INF  Sending file. Request path: '/furni/js/bootstrap.bundle.min.js'. Physical path: 'C:\Users\Mustafa\Desktop\Edutech_Assignments\ASSIGNMENTS\ASPNETMVC_CORE_ASSIGNMENT\AddressBook\AddressBookWebUI\wwwroot\furni\js\bootstrap.bundle.min.js'
+2024-10-23 11:14:12.149 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/furni/js/bootstrap.bundle.min.js - - - 200 78080 application/javascript 40.6990ms
+2024-10-23 11:14:12.156 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/furni/js/custom.js - -
+2024-10-23 11:14:12.174 +03:00  INF  Sending file. Request path: '/furni/js/custom.js'. Physical path: 'C:\Users\Mustafa\Desktop\Edutech_Assignments\ASSIGNMENTS\ASPNETMVC_CORE_ASSIGNMENT\AddressBook\AddressBookWebUI\wwwroot\furni\js\custom.js'
+2024-10-23 11:14:12.174 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/furni/js/custom.js - - - 200 1809 application/javascript 18.3151ms
+2024-10-23 11:14:12.174 +03:00  INF  Sending file. Request path: '/furni/js/tiny-slider.js'. Physical path: 'C:\Users\Mustafa\Desktop\Edutech_Assignments\ASSIGNMENTS\ASPNETMVC_CORE_ASSIGNMENT\AddressBook\AddressBookWebUI\wwwroot\furni\js\tiny-slider.js'
+2024-10-23 11:14:12.174 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/furni/js/tiny-slider.js - - - 200 31737 application/javascript 57.6235ms
+2024-10-23 11:14:12.176 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/lib/jquery/dist/jquery.min.js - -
+2024-10-23 11:14:12.219 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - -
+2024-10-23 11:14:12.222 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - - - 200 13768 application/javascript;+charset=utf-8 3.6861ms
+2024-10-23 11:14:12.245 +03:00  INF  Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: 'C:\Users\Mustafa\Desktop\Edutech_Assignments\ASSIGNMENTS\ASPNETMVC_CORE_ASSIGNMENT\AddressBook\AddressBookWebUI\wwwroot\lib\jquery\dist\jquery.min.js'
+2024-10-23 11:14:12.245 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/lib/jquery/dist/jquery.min.js - - - 200 89476 application/javascript 69.2044ms
+2024-10-23 11:14:12.249 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/_vs/browserLink - -
+2024-10-23 11:14:12.321 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 72.2227ms
+2024-10-23 11:14:12.340 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - -
+2024-10-23 11:14:12.340 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - - - 200 13768 application/javascript;+charset=utf-8 0.2045ms
+2024-10-23 11:14:12.519 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/favicon.png - -
+2024-10-23 11:14:12.524 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/favicon.png - - - 404 0 - 5.0534ms
+2024-10-23 11:14:18.816 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/services.html - -
+2024-10-23 11:14:18.822 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/services.html - - - 404 0 - 5.9818ms
+2024-10-23 11:14:20.698 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - -
+2024-10-23 11:14:20.699 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - - - 200 13768 application/javascript;+charset=utf-8 0.2996ms
+2024-10-23 11:14:20.749 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - -
+2024-10-23 11:14:20.749 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - - - 200 13768 application/javascript;+charset=utf-8 0.1979ms
+2024-10-23 11:14:21.851 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/Home/Address - -
+2024-10-23 11:14:21.858 +03:00  INF  Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-10-23 11:14:21.864 +03:00  INF  AuthenticationScheme: Identity.Application was challenged.
+2024-10-23 11:14:21.864 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/Home/Address - - - 302 0 - 13.8959ms
+2024-10-23 11:14:21.867 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/Account/Login?ReturnUrl=%2FHome%2FAddress - -
+2024-10-23 11:14:21.869 +03:00  INF  Executing endpoint 'AddressBookWebUI.Controllers.AccountController.Login (AddressBookWebUI)'
+2024-10-23 11:14:21.870 +03:00  INF  Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller AddressBookWebUI.Controllers.AccountController (AddressBookWebUI).
+2024-10-23 11:14:21.881 +03:00  INF  Login sayfası çağrıldı!
+2024-10-23 11:14:21.925 +03:00  INF  Executing ViewResult, running view Login.
+2024-10-23 11:14:21.958 +03:00  INF  Executed ViewResult - view Login executed in 33.5255ms.
+2024-10-23 11:14:21.958 +03:00  INF  Executed action AddressBookWebUI.Controllers.AccountController.Login (AddressBookWebUI) in 87.9693ms
+2024-10-23 11:14:21.958 +03:00  INF  Executed endpoint 'AddressBookWebUI.Controllers.AccountController.Login (AddressBookWebUI)'
+2024-10-23 11:14:21.958 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/Account/Login?ReturnUrl=%2FHome%2FAddress - - - 200 - text/html;+charset=utf-8 91.2405ms
+2024-10-23 11:14:22.070 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - -
+2024-10-23 11:14:22.070 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/_vs/browserLink - -
+2024-10-23 11:14:22.070 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - - - 200 13768 application/javascript;+charset=utf-8 0.1799ms
+2024-10-23 11:14:22.074 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 3.9921ms
+2024-10-23 11:14:22.098 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - -
+2024-10-23 11:14:22.098 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - - - 200 13768 application/javascript;+charset=utf-8 0.1388ms
+2024-10-23 11:14:22.121 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/Account/favicon.png - -
+2024-10-23 11:14:22.127 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/Account/favicon.png - - - 404 0 - 5.9105ms
+2024-10-23 11:14:27.263 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/Home/Index - -
+2024-10-23 11:14:27.268 +03:00  INF  Executing endpoint 'AddressBookWebUI.Controllers.HomeController.Index (AddressBookWebUI)'
+2024-10-23 11:14:27.268 +03:00  INF  Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller AddressBookWebUI.Controllers.HomeController (AddressBookWebUI).
+2024-10-23 11:14:27.269 +03:00  INF  Executing ViewResult, running view Index.
+2024-10-23 11:14:27.269 +03:00  INF  Executed ViewResult - view Index executed in 0.5982ms.
+2024-10-23 11:14:27.269 +03:00  INF  Executed action AddressBookWebUI.Controllers.HomeController.Index (AddressBookWebUI) in 1.6426ms
+2024-10-23 11:14:27.269 +03:00  INF  Executed endpoint 'AddressBookWebUI.Controllers.HomeController.Index (AddressBookWebUI)'
+2024-10-23 11:14:27.270 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/Home/Index - - - 200 - text/html;+charset=utf-8 6.3788ms
+2024-10-23 11:14:27.284 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - -
+2024-10-23 11:14:27.284 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/_vs/browserLink - -
+2024-10-23 11:14:27.284 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - - - 200 13768 application/javascript;+charset=utf-8 0.1637ms
+2024-10-23 11:14:27.290 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 6.2850ms
+2024-10-23 11:14:27.306 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - -
+2024-10-23 11:14:27.306 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - - - 200 13768 application/javascript;+charset=utf-8 0.1620ms
+2024-10-23 11:14:27.333 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/Home/favicon.png - -
+2024-10-23 11:14:27.334 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/Home/favicon.png - - - 404 0 - 0.4856ms
+2024-10-23 11:14:28.008 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/Home/Address - -
+2024-10-23 11:14:28.010 +03:00  INF  Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-10-23 11:14:28.011 +03:00  INF  AuthenticationScheme: Identity.Application was challenged.
+2024-10-23 11:14:28.011 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/Home/Address - - - 302 0 - 2.8594ms
+2024-10-23 11:14:28.013 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/Account/Login?ReturnUrl=%2FHome%2FAddress - -
+2024-10-23 11:14:28.014 +03:00  INF  Executing endpoint 'AddressBookWebUI.Controllers.AccountController.Login (AddressBookWebUI)'
+2024-10-23 11:14:28.014 +03:00  INF  Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller AddressBookWebUI.Controllers.AccountController (AddressBookWebUI).
+2024-10-23 11:14:28.017 +03:00  INF  Login sayfası çağrıldı!
+2024-10-23 11:14:28.043 +03:00  INF  Executing ViewResult, running view Login.
+2024-10-23 11:14:28.045 +03:00  INF  Executed ViewResult - view Login executed in 1.7419ms.
+2024-10-23 11:14:28.045 +03:00  INF  Executed action AddressBookWebUI.Controllers.AccountController.Login (AddressBookWebUI) in 30.8498ms
+2024-10-23 11:14:28.045 +03:00  INF  Executed endpoint 'AddressBookWebUI.Controllers.AccountController.Login (AddressBookWebUI)'
+2024-10-23 11:14:28.045 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/Account/Login?ReturnUrl=%2FHome%2FAddress - - - 200 - text/html;+charset=utf-8 32.3735ms
+2024-10-23 11:14:28.062 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - -
+2024-10-23 11:14:28.063 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - - - 200 13768 application/javascript;+charset=utf-8 0.1713ms
+2024-10-23 11:14:28.063 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/_vs/browserLink - -
+2024-10-23 11:14:28.069 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 5.9269ms
+2024-10-23 11:14:28.083 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - -
+2024-10-23 11:14:28.083 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - - - 200 13768 application/javascript;+charset=utf-8 0.1316ms
+2024-10-23 11:14:28.620 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/Account/Profile - -
+2024-10-23 11:14:28.622 +03:00  INF  Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-10-23 11:14:28.622 +03:00  INF  AuthenticationScheme: Identity.Application was challenged.
+2024-10-23 11:14:28.622 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/Account/Profile - - - 302 0 - 2.0262ms
+2024-10-23 11:14:28.625 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/Account/Login?ReturnUrl=%2FAccount%2FProfile - -
+2024-10-23 11:14:28.627 +03:00  INF  Executing endpoint 'AddressBookWebUI.Controllers.AccountController.Login (AddressBookWebUI)'
+2024-10-23 11:14:28.627 +03:00  INF  Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller AddressBookWebUI.Controllers.AccountController (AddressBookWebUI).
+2024-10-23 11:14:28.629 +03:00  INF  Login sayfası çağrıldı!
+2024-10-23 11:14:28.657 +03:00  INF  Executing ViewResult, running view Login.
+2024-10-23 11:14:28.658 +03:00  INF  Executed ViewResult - view Login executed in 1.1934ms.
+2024-10-23 11:14:28.658 +03:00  INF  Executed action AddressBookWebUI.Controllers.AccountController.Login (AddressBookWebUI) in 30.5521ms
+2024-10-23 11:14:28.658 +03:00  INF  Executed endpoint 'AddressBookWebUI.Controllers.AccountController.Login (AddressBookWebUI)'
+2024-10-23 11:14:28.658 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/Account/Login?ReturnUrl=%2FAccount%2FProfile - - - 200 - text/html;+charset=utf-8 33.2948ms
+2024-10-23 11:14:28.674 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - -
+2024-10-23 11:14:28.674 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/_vs/browserLink - -
+2024-10-23 11:14:28.674 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - - - 200 13768 application/javascript;+charset=utf-8 0.2471ms
+2024-10-23 11:14:28.678 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 3.5396ms
+2024-10-23 11:14:28.699 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - -
+2024-10-23 11:14:28.700 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - - - 200 13768 application/javascript;+charset=utf-8 0.1320ms
+2024-10-23 11:14:29.763 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/Home/Address - -
+2024-10-23 11:14:29.765 +03:00  INF  Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-10-23 11:14:29.765 +03:00  INF  AuthenticationScheme: Identity.Application was challenged.
+2024-10-23 11:14:29.765 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/Home/Address - - - 302 0 - 2.0563ms
+2024-10-23 11:14:29.768 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/Account/Login?ReturnUrl=%2FHome%2FAddress - -
+2024-10-23 11:14:29.769 +03:00  INF  Executing endpoint 'AddressBookWebUI.Controllers.AccountController.Login (AddressBookWebUI)'
+2024-10-23 11:14:29.770 +03:00  INF  Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller AddressBookWebUI.Controllers.AccountController (AddressBookWebUI).
+2024-10-23 11:14:29.770 +03:00  INF  Login sayfası çağrıldı!
+2024-10-23 11:14:29.797 +03:00  INF  Executing ViewResult, running view Login.
+2024-10-23 11:14:29.798 +03:00  INF  Executed ViewResult - view Login executed in 0.6371ms.
+2024-10-23 11:14:29.798 +03:00  INF  Executed action AddressBookWebUI.Controllers.AccountController.Login (AddressBookWebUI) in 27.9952ms
+2024-10-23 11:14:29.798 +03:00  INF  Executed endpoint 'AddressBookWebUI.Controllers.AccountController.Login (AddressBookWebUI)'
+2024-10-23 11:14:29.798 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/Account/Login?ReturnUrl=%2FHome%2FAddress - - - 200 - text/html;+charset=utf-8 29.8394ms
+2024-10-23 11:14:29.814 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - -
+2024-10-23 11:14:29.815 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - - - 200 13768 application/javascript;+charset=utf-8 0.1699ms
+2024-10-23 11:14:29.815 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/_vs/browserLink - -
+2024-10-23 11:14:29.818 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 3.3283ms
+2024-10-23 11:14:29.835 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - -
+2024-10-23 11:14:29.835 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - - - 200 13768 application/javascript;+charset=utf-8 0.1328ms
+2024-10-23 11:14:30.100 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/Home/Index - -
+2024-10-23 11:14:30.101 +03:00  INF  Executing endpoint 'AddressBookWebUI.Controllers.HomeController.Index (AddressBookWebUI)'
+2024-10-23 11:14:30.101 +03:00  INF  Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller AddressBookWebUI.Controllers.HomeController (AddressBookWebUI).
+2024-10-23 11:14:30.103 +03:00  INF  Executing ViewResult, running view Index.
+2024-10-23 11:14:30.103 +03:00  INF  Executed ViewResult - view Index executed in 0.2974ms.
+2024-10-23 11:14:30.103 +03:00  INF  Executed action AddressBookWebUI.Controllers.HomeController.Index (AddressBookWebUI) in 1.7997ms
+2024-10-23 11:14:30.103 +03:00  INF  Executed endpoint 'AddressBookWebUI.Controllers.HomeController.Index (AddressBookWebUI)'
+2024-10-23 11:14:30.103 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/Home/Index - - - 200 - text/html;+charset=utf-8 3.3307ms
+2024-10-23 11:14:30.119 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - -
+2024-10-23 11:14:30.119 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - - - 200 13768 application/javascript;+charset=utf-8 0.1876ms
+2024-10-23 11:14:30.119 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/_vs/browserLink - -
+2024-10-23 11:14:30.124 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 4.0338ms
+2024-10-23 11:14:30.144 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - -
+2024-10-23 11:14:30.144 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - - - 200 13768 application/javascript;+charset=utf-8 0.1463ms
+2024-10-23 11:14:31.021 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/Home/Address - -
+2024-10-23 11:14:31.022 +03:00  INF  Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-10-23 11:14:31.022 +03:00  INF  AuthenticationScheme: Identity.Application was challenged.
+2024-10-23 11:14:31.022 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/Home/Address - - - 302 0 - 1.4755ms
+2024-10-23 11:14:31.024 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/Account/Login?ReturnUrl=%2FHome%2FAddress - -
+2024-10-23 11:14:31.026 +03:00  INF  Executing endpoint 'AddressBookWebUI.Controllers.AccountController.Login (AddressBookWebUI)'
+2024-10-23 11:14:31.026 +03:00  INF  Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller AddressBookWebUI.Controllers.AccountController (AddressBookWebUI).
+2024-10-23 11:14:31.026 +03:00  INF  Login sayfası çağrıldı!
+2024-10-23 11:14:31.053 +03:00  INF  Executing ViewResult, running view Login.
+2024-10-23 11:14:31.054 +03:00  INF  Executed ViewResult - view Login executed in 0.6637ms.
+2024-10-23 11:14:31.054 +03:00  INF  Executed action AddressBookWebUI.Controllers.AccountController.Login (AddressBookWebUI) in 28.1767ms
+2024-10-23 11:14:31.054 +03:00  INF  Executed endpoint 'AddressBookWebUI.Controllers.AccountController.Login (AddressBookWebUI)'
+2024-10-23 11:14:31.054 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/Account/Login?ReturnUrl=%2FHome%2FAddress - - - 200 - text/html;+charset=utf-8 29.9653ms
+2024-10-23 11:14:31.069 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - -
+2024-10-23 11:14:31.069 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/_vs/browserLink - -
+2024-10-23 11:14:31.069 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - - - 200 13768 application/javascript;+charset=utf-8 0.1529ms
+2024-10-23 11:14:31.076 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 6.2367ms
+2024-10-23 11:14:31.090 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - -
+2024-10-23 11:14:31.091 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - - - 200 13768 application/javascript;+charset=utf-8 0.1823ms
+2024-10-23 11:14:33.079 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/Account/Login - -
+2024-10-23 11:14:33.081 +03:00  INF  Executing endpoint 'AddressBookWebUI.Controllers.AccountController.Login (AddressBookWebUI)'
+2024-10-23 11:14:33.081 +03:00  INF  Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller AddressBookWebUI.Controllers.AccountController (AddressBookWebUI).
+2024-10-23 11:14:33.081 +03:00  INF  Login sayfası çağrıldı!
+2024-10-23 11:14:33.129 +03:00  INF  Executing ViewResult, running view Login.
+2024-10-23 11:14:33.130 +03:00  INF  Executed ViewResult - view Login executed in 0.8479ms.
+2024-10-23 11:14:33.130 +03:00  INF  Executed action AddressBookWebUI.Controllers.AccountController.Login (AddressBookWebUI) in 48.7747ms
+2024-10-23 11:14:33.130 +03:00  INF  Executed endpoint 'AddressBookWebUI.Controllers.AccountController.Login (AddressBookWebUI)'
+2024-10-23 11:14:33.130 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/Account/Login - - - 200 - text/html;+charset=utf-8 50.8381ms
+2024-10-23 11:14:33.144 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - -
+2024-10-23 11:14:33.144 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - - - 200 13768 application/javascript;+charset=utf-8 0.2016ms
+2024-10-23 11:14:33.147 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/_vs/browserLink - -
+2024-10-23 11:14:33.154 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 7.0889ms
+2024-10-23 11:14:33.168 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - -
+2024-10-23 11:14:33.168 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - - - 200 13768 application/javascript;+charset=utf-8 0.1781ms
+2024-10-23 11:14:35.963 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/Account/cart.html - -
+2024-10-23 11:14:35.964 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/Account/cart.html - - - 404 0 - 1.4674ms
+2024-10-23 11:14:37.453 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/Account/Login - -
+2024-10-23 11:14:37.454 +03:00  INF  Executing endpoint 'AddressBookWebUI.Controllers.AccountController.Login (AddressBookWebUI)'
+2024-10-23 11:14:37.454 +03:00  INF  Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller AddressBookWebUI.Controllers.AccountController (AddressBookWebUI).
+2024-10-23 11:14:37.455 +03:00  INF  Login sayfası çağrıldı!
+2024-10-23 11:14:37.497 +03:00  INF  Executing ViewResult, running view Login.
+2024-10-23 11:14:37.498 +03:00  INF  Executed ViewResult - view Login executed in 0.8213ms.
+2024-10-23 11:14:37.498 +03:00  INF  Executed action AddressBookWebUI.Controllers.AccountController.Login (AddressBookWebUI) in 43.1099ms
+2024-10-23 11:14:37.498 +03:00  INF  Executed endpoint 'AddressBookWebUI.Controllers.AccountController.Login (AddressBookWebUI)'
+2024-10-23 11:14:37.498 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/Account/Login - - - 200 - text/html;+charset=utf-8 45.0525ms
+2024-10-23 11:14:37.605 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - -
+2024-10-23 11:14:37.606 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - - - 200 13768 application/javascript;+charset=utf-8 0.2221ms
+2024-10-23 11:14:37.656 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - -
+2024-10-23 11:14:37.656 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - - - 200 13768 application/javascript;+charset=utf-8 0.2492ms
+2024-10-23 11:14:38.981 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/Account/Register - -
+2024-10-23 11:14:38.982 +03:00  INF  Executing endpoint 'AddressBookWebUI.Controllers.AccountController.Register (AddressBookWebUI)'
+2024-10-23 11:14:38.983 +03:00  INF  Route matched with {action = "Register", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register() on controller AddressBookWebUI.Controllers.AccountController (AddressBookWebUI).
+2024-10-23 11:14:38.984 +03:00  INF  Executing ViewResult, running view Register.
+2024-10-23 11:14:39.066 +03:00  INF  Executed ViewResult - view Register executed in 82.2594ms.
+2024-10-23 11:14:39.066 +03:00  INF  Executed action AddressBookWebUI.Controllers.AccountController.Register (AddressBookWebUI) in 82.8097ms
+2024-10-23 11:14:39.066 +03:00  INF  Executed endpoint 'AddressBookWebUI.Controllers.AccountController.Register (AddressBookWebUI)'
+2024-10-23 11:14:39.067 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/Account/Register - - - 200 - text/html;+charset=utf-8 85.9999ms
+2024-10-23 11:14:39.084 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/lib/bootstrap/dist/css/bootstrap.min.css - -
+2024-10-23 11:14:39.084 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c - -
+2024-10-23 11:14:39.085 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - -
+2024-10-23 11:14:39.085 +03:00  INF  Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\Mustafa\Desktop\Edutech_Assignments\ASSIGNMENTS\ASPNETMVC_CORE_ASSIGNMENT\AddressBook\AddressBookWebUI\wwwroot\css\site.css'
+2024-10-23 11:14:39.086 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c - - - 200 194 text/css 1.6858ms
+2024-10-23 11:14:39.085 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/AddressBookWebUI.styles.css?v=US0_5JSRK8_MJkFL6MVekE7CUCRwoqkS_zWOWuWTfHQ - -
+2024-10-23 11:14:39.086 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - -
+2024-10-23 11:14:39.086 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+2024-10-23 11:14:39.086 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - - - 200 13768 application/javascript;+charset=utf-8 0.1454ms
+2024-10-23 11:14:39.087 +03:00  INF  Sending file. Request path: '/js/site.js'. Physical path: 'C:\Users\Mustafa\Desktop\Edutech_Assignments\ASSIGNMENTS\ASPNETMVC_CORE_ASSIGNMENT\AddressBook\AddressBookWebUI\wwwroot\js\site.js'
+2024-10-23 11:14:39.087 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - - 200 230 application/javascript 2.2276ms
+2024-10-23 11:14:39.088 +03:00  INF  Sending file. Request path: '/AddressBookWebUI.styles.css'. Physical path: 'C:\Users\Mustafa\Desktop\Edutech_Assignments\ASSIGNMENTS\ASPNETMVC_CORE_ASSIGNMENT\AddressBook\AddressBookWebUI\obj\Debug\net6.0\scopedcss\bundle\AddressBookWebUI.styles.css'
+2024-10-23 11:14:39.088 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/AddressBookWebUI.styles.css?v=US0_5JSRK8_MJkFL6MVekE7CUCRwoqkS_zWOWuWTfHQ - - - 200 1133 text/css 4.1265ms
+2024-10-23 11:14:39.095 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/_vs/browserLink - -
+2024-10-23 11:14:39.100 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 4.5119ms
+2024-10-23 11:14:39.101 +03:00  INF  Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Users\Mustafa\Desktop\Edutech_Assignments\ASSIGNMENTS\ASPNETMVC_CORE_ASSIGNMENT\AddressBook\AddressBookWebUI\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+2024-10-23 11:14:39.101 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 162720 text/css 17.0873ms
+2024-10-23 11:14:39.114 +03:00  INF  Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'C:\Users\Mustafa\Desktop\Edutech_Assignments\ASSIGNMENTS\ASPNETMVC_CORE_ASSIGNMENT\AddressBook\AddressBookWebUI\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js'
+2024-10-23 11:14:39.114 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 200 78468 application/javascript 28.7467ms
+2024-10-23 11:14:39.142 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/favicon.ico - -
+2024-10-23 11:14:39.151 +03:00  INF  Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\Mustafa\Desktop\Edutech_Assignments\ASSIGNMENTS\ASPNETMVC_CORE_ASSIGNMENT\AddressBook\AddressBookWebUI\wwwroot\favicon.ico'
+2024-10-23 11:14:39.152 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/favicon.ico - - - 200 5430 image/x-icon 9.5045ms
+2024-10-23 11:14:43.454 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/Account/Login - -
+2024-10-23 11:14:43.455 +03:00  INF  Executing endpoint 'AddressBookWebUI.Controllers.AccountController.Login (AddressBookWebUI)'
+2024-10-23 11:14:43.455 +03:00  INF  Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller AddressBookWebUI.Controllers.AccountController (AddressBookWebUI).
+2024-10-23 11:14:43.456 +03:00  INF  Login sayfası çağrıldı!
+2024-10-23 11:14:43.500 +03:00  INF  Executing ViewResult, running view Login.
+2024-10-23 11:14:43.501 +03:00  INF  Executed ViewResult - view Login executed in 0.7342ms.
+2024-10-23 11:14:43.501 +03:00  INF  Executed action AddressBookWebUI.Controllers.AccountController.Login (AddressBookWebUI) in 45.4966ms
+2024-10-23 11:14:43.501 +03:00  INF  Executed endpoint 'AddressBookWebUI.Controllers.AccountController.Login (AddressBookWebUI)'
+2024-10-23 11:14:43.501 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/Account/Login - - - 200 - text/html;+charset=utf-8 46.9985ms
+2024-10-23 11:14:43.518 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - -
+2024-10-23 11:14:43.518 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - - - 200 13768 application/javascript;+charset=utf-8 0.2164ms
+2024-10-23 11:14:43.542 +03:00  INF  Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - -
+2024-10-23 11:14:43.542 +03:00  INF  Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - - - 200 13768 application/javascript;+charset=utf-8 0.1430ms
+2024-10-23 11:16:08.413 +03:00  WRN  The property 'Id' on entity type 'City' is of type 'byte', but is set up to use a SQL Server identity column; this requires that values starting at 255 and counting down will be used for temporary key values. A temporary key value is needed for every entity inserted in a single call to 'SaveChanges'. Care must be taken that these values do not collide with real key values.
+2024-10-23 11:16:08.649 +03:00  WRN  The property 'Id' on entity type 'City' is of type 'byte', but is set up to use a SQL Server identity column; this requires that values starting at 255 and counting down will be used for temporary key values. A temporary key value is needed for every entity inserted in a single call to 'SaveChanges'. Care must be taken that these values do not collide with real key values.
+2024-10-23 11:16:24.401 +03:00  WRN  The property 'Id' on entity type 'City' is of type 'byte', but is set up to use a SQL Server identity column; this requires that values starting at 255 and counting down will be used for temporary key values. A temporary key value is needed for every entity inserted in a single call to 'SaveChanges'. Care must be taken that these values do not collide with real key values.
+2024-10-23 11:16:24.806 +03:00  INF  Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-10-23 11:16:24.828 +03:00  INF  Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-10-23 11:16:24.830 +03:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-10-23 11:16:24.907 +03:00  INF  Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+2024-10-23 11:16:24.909 +03:00  INF  Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-10-23 11:16:24.910 +03:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-10-23 11:16:24.913 +03:00  INF  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-10-23 11:16:24.926 +03:00  INF  Applying migration '20241023081608_xx'.
+2024-10-23 11:16:24.975 +03:00  INF  Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetRoles] (
+    [Id] nvarchar(450) NOT NULL,
+    [Description] nvarchar(max) NULL,
+    [Name] nvarchar(256) NULL,
+    [NormalizedName] nvarchar(256) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetRoles] PRIMARY KEY ([Id])
+);
+2024-10-23 11:16:24.977 +03:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUsers] (
+    [Id] nvarchar(450) NOT NULL,
+    [Name] nvarchar(150) NOT NULL,
+    [Surname] nvarchar(150) NOT NULL,
+    [BirthDate] datetime2 NULL,
+    [Gender] int NULL,
+    [ProfilePicture] nvarchar(max) NULL,
+    [UserName] nvarchar(256) NULL,
+    [NormalizedUserName] nvarchar(256) NULL,
+    [Email] nvarchar(256) NULL,
+    [NormalizedEmail] nvarchar(256) NULL,
+    [EmailConfirmed] bit NOT NULL,
+    [PasswordHash] nvarchar(max) NULL,
+    [SecurityStamp] nvarchar(max) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    [PhoneNumber] nvarchar(max) NULL,
+    [PhoneNumberConfirmed] bit NOT NULL,
+    [TwoFactorEnabled] bit NOT NULL,
+    [LockoutEnd] datetimeoffset NULL,
+    [LockoutEnabled] bit NOT NULL,
+    [AccessFailedCount] int NOT NULL,
+    CONSTRAINT [PK_AspNetUsers] PRIMARY KEY ([Id])
+);
+2024-10-23 11:16:24.978 +03:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [CITY] (
+    [Id] tinyint NOT NULL IDENTITY,
+    [CreatedDate] datetime2 NOT NULL,
+    [Name] nvarchar(100) NOT NULL,
+    [PlateCode] nvarchar(2) NOT NULL,
+    [IsDeleted] bit NOT NULL,
+    CONSTRAINT [PK_CITY] PRIMARY KEY ([Id])
+);
+2024-10-23 11:16:24.980 +03:00  INF  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetRoleClaims] (
+    [Id] int NOT NULL IDENTITY,
+    [RoleId] nvarchar(450) NOT NULL,
+    [ClaimType] nvarchar(max) NULL,
+    [ClaimValue] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetRoleClaims] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_AspNetRoleClaims_AspNetRoles_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [AspNetRoles] ([Id]) ON DELETE CASCADE
+);
+2024-10-23 11:16:24.981 +03:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserClaims] (
+    [Id] int NOT NULL IDENTITY,
+    [UserId] nvarchar(450) NOT NULL,
+    [ClaimType] nvarchar(max) NULL,
+    [ClaimValue] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetUserClaims] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_AspNetUserClaims_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-10-23 11:16:24.983 +03:00  INF  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserLogins] (
+    [LoginProvider] nvarchar(450) NOT NULL,
+    [ProviderKey] nvarchar(450) NOT NULL,
+    [ProviderDisplayName] nvarchar(max) NULL,
+    [UserId] nvarchar(450) NOT NULL,
+    CONSTRAINT [PK_AspNetUserLogins] PRIMARY KEY ([LoginProvider], [ProviderKey]),
+    CONSTRAINT [FK_AspNetUserLogins_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-10-23 11:16:24.985 +03:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserRoles] (
+    [UserId] nvarchar(450) NOT NULL,
+    [RoleId] nvarchar(450) NOT NULL,
+    CONSTRAINT [PK_AspNetUserRoles] PRIMARY KEY ([UserId], [RoleId]),
+    CONSTRAINT [FK_AspNetUserRoles_AspNetRoles_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [AspNetRoles] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_AspNetUserRoles_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-10-23 11:16:24.987 +03:00  INF  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserTokens] (
+    [UserId] nvarchar(450) NOT NULL,
+    [LoginProvider] nvarchar(450) NOT NULL,
+    [Name] nvarchar(450) NOT NULL,
+    [Value] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetUserTokens] PRIMARY KEY ([UserId], [LoginProvider], [Name]),
+    CONSTRAINT [FK_AspNetUserTokens_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-10-23 11:16:24.988 +03:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [DISTRICT] (
+    [Id] int NOT NULL IDENTITY,
+    [CreatedDate] datetime2 NOT NULL,
+    [CityId] tinyint NOT NULL,
+    [Name] nvarchar(250) NOT NULL,
+    [IsDeleted] bit NOT NULL,
+    CONSTRAINT [PK_DISTRICT] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_DISTRICT_CITY_CityId] FOREIGN KEY ([CityId]) REFERENCES [CITY] ([Id]) ON DELETE NO ACTION
+);
+2024-10-23 11:16:24.989 +03:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [NEIGBORHOOD] (
+    [Id] int NOT NULL IDENTITY,
+    [CityId] tinyint NOT NULL,
+    [DistrictId] int NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    [Name] nvarchar(150) NOT NULL,
+    [IsDeleted] bit NOT NULL,
+    CONSTRAINT [PK_NEIGBORHOOD] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_NEIGBORHOOD_CITY_CityId] FOREIGN KEY ([CityId]) REFERENCES [CITY] ([Id]) ON DELETE NO ACTION,
+    CONSTRAINT [FK_NEIGBORHOOD_DISTRICT_DistrictId] FOREIGN KEY ([DistrictId]) REFERENCES [DISTRICT] ([Id]) ON DELETE NO ACTION
+);
+2024-10-23 11:16:24.992 +03:00  INF  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [USERADRESS] (
+    [Id] int NOT NULL IDENTITY,
+    [CreatedDate] datetime2 NOT NULL,
+    [AddressTitle] nvarchar(100) NOT NULL,
+    [UserId] nvarchar(450) NOT NULL,
+    [CityId] tinyint NOT NULL,
+    [DistrictId] int NOT NULL,
+    [NeigborhoodId] int NOT NULL,
+    [FullAddress] nvarchar(500) NOT NULL,
+    [PostalCode] nvarchar(5) NULL,
+    [IsDeleted] bit NOT NULL,
+    CONSTRAINT [PK_USERADRESS] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_USERADRESS_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE NO ACTION,
+    CONSTRAINT [FK_USERADRESS_CITY_CityId] FOREIGN KEY ([CityId]) REFERENCES [CITY] ([Id]) ON DELETE NO ACTION,
+    CONSTRAINT [FK_USERADRESS_DISTRICT_DistrictId] FOREIGN KEY ([DistrictId]) REFERENCES [DISTRICT] ([Id]) ON DELETE NO ACTION,
+    CONSTRAINT [FK_USERADRESS_NEIGBORHOOD_NeigborhoodId] FOREIGN KEY ([NeigborhoodId]) REFERENCES [NEIGBORHOOD] ([Id]) ON DELETE NO ACTION
+);
+2024-10-23 11:16:24.993 +03:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetRoleClaims_RoleId] ON [AspNetRoleClaims] ([RoleId]);
+2024-10-23 11:16:24.993 +03:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [RoleNameIndex] ON [AspNetRoles] ([NormalizedName]) WHERE [NormalizedName] IS NOT NULL;
+2024-10-23 11:16:24.994 +03:00  INF  Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetUserClaims_UserId] ON [AspNetUserClaims] ([UserId]);
+2024-10-23 11:16:24.994 +03:00  INF  Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetUserLogins_UserId] ON [AspNetUserLogins] ([UserId]);
+2024-10-23 11:16:24.995 +03:00  INF  Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetUserRoles_RoleId] ON [AspNetUserRoles] ([RoleId]);
+2024-10-23 11:16:24.995 +03:00  INF  Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [EmailIndex] ON [AspNetUsers] ([NormalizedEmail]);
+2024-10-23 11:16:24.996 +03:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [UserNameIndex] ON [AspNetUsers] ([NormalizedUserName]) WHERE [NormalizedUserName] IS NOT NULL;
+2024-10-23 11:16:24.996 +03:00  INF  Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_DISTRICT_CityId] ON [DISTRICT] ([CityId]);
+2024-10-23 11:16:24.997 +03:00  INF  Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_NEIGBORHOOD_CityId] ON [NEIGBORHOOD] ([CityId]);
+2024-10-23 11:16:24.997 +03:00  INF  Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_NEIGBORHOOD_DistrictId] ON [NEIGBORHOOD] ([DistrictId]);
+2024-10-23 11:16:24.998 +03:00  INF  Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_USERADRESS_CityId] ON [USERADRESS] ([CityId]);
+2024-10-23 11:16:24.998 +03:00  INF  Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_USERADRESS_DistrictId] ON [USERADRESS] ([DistrictId]);
+2024-10-23 11:16:24.999 +03:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_USERADRESS_NeigborhoodId] ON [USERADRESS] ([NeigborhoodId]);
+2024-10-23 11:16:24.999 +03:00  INF  Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_USERADRESS_UserId] ON [USERADRESS] ([UserId]);
+2024-10-23 11:16:25.000 +03:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20241023081608_xx', N'7.0.4');

@@ -1,0 +1,49 @@
+﻿@model List<UserAddressVM>
+@{
+    ViewData["Title"] = "AllAddress";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="table-responsive">
+    <table id="basic-datatables"
+           class="display table table-striped table-hover">
+        <thead>
+            <tr>
+                <th>Oluşturulma Tarihi</th>
+                <th>Adres Sahibi</th>
+                <th>Adres Başlık</th>
+                <th>İl</th>
+                <th>İlçe</th>
+                <th>Mahalle</th>
+                <th>Adres Detay</th>
+                <th>Posta Kodu</th>
+                <th>İşlemler</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <th>@item.CreatedDate.ToString("dd-MM-yyyy HH:mm")</th>
+                    <th>@item.User?.Name @item.User?.Surname.ToUpper()</th>
+                    <th>@item.AddressTitle</th>
+                    <th>@item.City?.Name</th>
+                    <th>@item.District?.Name</th>
+                    <th>@item.Neigborhood?.Name</th>
+                    <th>@item.FullAddress</th>
+                    @if (item.PostalCode==null || item.PostalCode=="0")
+                    {
+                        <th>---</th>
+                    }else
+                    {
+                        <th>@item.PostalCode</th>
+                    }
+                    <th>
+                     <a href="/Admin/Home/UpdateAddress/@item.Id" class="btn btn-sm btn-info">DÜZENLE</a>
+                    </th>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

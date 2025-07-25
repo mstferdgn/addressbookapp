@@ -1,0 +1,372 @@
+﻿@* using yazmamya gerek kalmadı çünkü mvc core projesi ViewStart dosyasına sahiptir
+ *@
+
+ @model UserAddressVM
+
+@{
+    ViewData["Title"] = "Address";
+    Layout = "~/Views/Shared/_LayoutFurniAccount.cshtml";
+}
+
+<div class="container">
+    @if (!string.IsNullOrEmpty(ViewBag.AddressSuccessMsg))
+    {
+        <div class="alert alert-info alert-dismissible fade show" role="alert">
+            <strong>BİLGİ!</strong>  @ViewBag.AddressSuccessMsg
+            <button type="button" class="close btn btn-sm "
+                    style="background-color:#3b5d50;float:right;margin-bottom:5px "
+                    data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    }
+    @if (TempData["AddressDeleteFailedMsg"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <strong>BİLGİ!</strong>  @TempData["AddressDeleteFailedMsg"]
+            <button type="button" class="close btn btn-sm "
+                    style="background-color:#3b5d50;float:right;margin-bottom:5px "
+                    data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    }
+    @if (TempData["AddressDeleteSuccessMsg"] != null)
+    {
+        <div class="alert alert-info alert-dismissible fade show" role="alert">
+            <strong>BİLGİ!</strong>  @TempData["AddressDeleteSuccessMsg"]
+            <button type="button" class="close btn btn-sm "
+                    style="background-color:#3b5d50;float:right;margin-bottom:5px "
+                    data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    }
+    @if (TempData["AddressEditSuccessMsg"] != null)
+    {
+        <div class="alert alert-info alert-dismissible fade show" role="alert">
+            <strong>BİLGİ!</strong>  @TempData["AddressEditSuccessMsg"]
+            <button type="button" class="close btn btn-sm "
+                    style="background-color:#3b5d50;float:right;margin-bottom:5px "
+                    data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    }
+    
+</div>
+
+<form asp-action="Address" asp-controller="Home" method="post" style="margin-top:15px"
+      asp-antiforgery="true"
+>
+
+@*     @Html.AntiForgeryToken()
+ *@   
+ 
+ <input type="hidden" asp-for="UserId" />
+    <div class="row">
+        <div asp-validation-summary="All" id="validationDiv"
+             style="color:red"></div>
+    </div>
+    <div class="row">
+        <div class="col-6 mb-5">
+            <div class="form-group">
+                <label class="text-black" for="fname">Adres Başlığı:</label>
+                <input type="text" class="form-control" id="addressTitle" asp-for="AddressTitle">
+            </div>
+        </div>
+        <div class="col-6 mb-5">
+            <div class="form-group">
+                <label class="text-black" for="fname">İl:</label>
+                <select class="form-control" asp-for="CityId" id="citySelect">
+                    <option value="0">***İl Seçiniz***</option>
+
+
+                    @foreach (var item in ViewBag.Cities)
+                    {
+                        <option value="@item.Id">@item.Name</option>
+                    }
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="col-6 mb-5">
+            <div class="form-group">
+                <label class="text-black" for="fname">İlçe:</label>
+                <select class="form-control" asp-for="DistrictId" id="districtSelect">
+                    <option value="0">***İlçe Seçiniz***</option>
+
+                </select>
+            </div>
+        </div>
+        <div class="col-6 mb-5">
+            <div class="form-group">
+                <label class="text-black" for="fname">Mahalle:</label>
+                <select class="form-control" asp-for="NeigborhoodId" id="neigborhoodSelect">
+                    <option value="0">***Mahalle Seçiniz***</option>
+
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="col-6 mb-5">
+            <div class="form-group">
+                <label class="text-black" for="fname">Adres Detay:</label>
+                <textarea class="form-control" rows="3" asp-for="FullAddress" id="fullAddressinput"></textarea>
+            </div>
+        </div>
+        <div class="col-6 mb-5">
+            <div class="form-group">
+
+                <label class="text-black" for="fname">Posta Kodu:</label>
+                <input type="text" class="form-control" id="postalColde" asp-for="PostalCode" readonly>
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <button type="submit" class="btn btn-dark">KAYDET</button>
+    </div>
+</form>
+
+<div class="row" id="addressDiv" style="margin-top:25px;">
+    @foreach (UserAddressVM item in ViewBag.UserAddress)
+    {@if (item.Id % 2 == 0)
+        {
+            <div class="col-3" style=" background-color:#3b5d50; color:white;margin-right:60px">
+                <div class="icon">
+                    <img src="/furni/images/bag.svg" alt="Image" class="imf-fluid">
+                </div>
+                <h3><a href="/Home/AddressEdit/@item.Id"><span class="">@item.City?.Name / </span> @item.District?.Name</a></h3>
+                <span class="d-block position mb-4">
+                    @item.Neigborhood?.Name <br />
+                    Açık Başlığı: @item.AddressTitle <br />
+                    @if (item.PostalCode != null)
+                    {
+                        <i style="color:red">Posta Kodu: @item.PostalCode</i>
+                    }
+
+                </span>
+                <p>
+                    Açık Adres: @item.FullAddress
+                </p>
+                <p class="mb-0"><a href="/Home/AddressDelete/@item.Id" class="more dark">Sil <span class="icon-arrow_forward"></span></a></p>
+            </div>
+
+        }
+        else
+        {
+            <div class="col-3" style=" background-color:white; color: #3b5d50;margin-right:60px">
+                <div class="icon">
+                    <img src="/furni/images/bag.svg" alt="Image" class="imf-fluid">
+                </div>
+                <h3><a href="/Home/AddressEdit/@item.Id"><span class="">@item.City?.Name / </span> @item.District?.Name</a></h3>
+                <span class="d-block position mb-4">
+                    @item.Neigborhood?.Name <br />
+                    Açık Başlığı: @item.AddressTitle <br />
+                    @if (item.PostalCode != null)
+                    {
+                        <i style="color:red">Posta Kodu: @item.PostalCode</i>
+                    }
+
+                </span>
+                <p>
+                    Açık Adres: @item.FullAddress
+                </p>
+                <p class="mb-0"><a href="/Home/AddressDelete/@item.Id" class="more dark">Sil <span class="icon-arrow_forward"></span></a></p>
+            </div>
+
+        }
+
+
+    }
+
+</div>
+
+@section scriptler {
+    <script>
+
+        $(document).ready(function () {
+
+            $("#citySelect").val(0);
+            $("#fullAddressinput").val('');
+            $("#addressTitle").val('');
+            $("#neigborhoodSelect").prop("disabled", true);
+            $("#districtSelect").prop("disabled", true);
+            $("#fullAddressinput").prop("disabled", true);
+
+            $("#citySelect").on("change", function () {
+
+
+                //mahalle select temizlik
+                $("#neigborhoodSelect").empty();
+                $("#neigborhoodSelect").prepend("<option value='0' selected>***Mahalle Seçiniz***</option>");
+                $("#neigborhoodSelect").prop("disabled", true);
+
+                //ilçe select temizlik
+                $("#districtSelect").empty();
+                $("#districtSelect").prepend("<option value='0' selected>***İlçe Seçiniz***</option>");
+                $("#districtSelect").prop("disabled", true);
+
+                //seçili olan ile ait idyi alacağız
+                var cityid = $(this).val();
+                if (cityid > 0) {
+
+                    $.ajax({
+                        url: "/Home/GetDistrictsofCity?cityid=" + cityid,
+                        type: 'GET',
+                        dataType: 'json', // added data type
+                        success: function (res) {
+                            console.log(res.data);
+                            if (res.success) {
+                                if (res.data.length > 0) {
+
+                                    $("#districtSelect").prop("disabled", false);
+                                    $("#districtSelect").empty();
+                                    $("#districtSelect").prepend("<option value='0' selected>***İlçe Seçiniz***</option>");
+
+
+                                    res.data.forEach(function (item) {
+                                        $("#districtSelect").append($("<option />")
+                                            .val(item.id).text(item.name));
+                                    });
+
+                                } // length>0 if bitti
+                                else {
+                                    $("#districtSelect").empty();
+                                    $("#districtSelect").prepend("<option value='0' selected>***İlçe Seçiniz***</option>");
+                                    $("#districtSelect").prop("disabled", true);
+                                }
+                            }
+                            else {
+                                alert(res.message);
+
+                            }
+
+
+                        }, // success bitti
+                        error: function (err) {
+                            alert(res.message);
+                        } // error bitti
+                    });
+
+
+                } // if bitti
+
+
+            }); // citySelect change bitti
+
+
+
+            $("#districtSelect").on("change", function () {
+
+                //mahalle select temizlik
+                $("#neigborhoodSelect").empty();
+                $("#neigborhoodSelect").prepend("<option value='0' selected>***Mahalle Seçiniz***</option>");
+                $("#neigborhoodSelect").prop("disabled", true);
+
+
+                //seçili olan ilçeye ait idyi alacağız
+                var districtId = $(this).val();
+                if (districtId > 0) {
+
+                    $.ajax({
+                        url: "/Home/GetNeigborhoodOfDistrict/" + districtId,
+                        type: 'GET',
+                        dataType: 'json', // added data type
+                        success: function (res) {
+
+                            if (res.success) {
+                                if (res.data.length > 0) {
+
+                                    $("#neigborhoodSelect").prop("disabled", false);
+                                    $("#neigborhoodSelect").empty();
+                                    $("#neigborhoodSelect").prepend("<option value='0' selected>***Mahalle Seçiniz***</option>");
+
+
+                                    res.data.forEach(function (item) {
+                                        $("#neigborhoodSelect").append($("<option />")
+                                            .val(item.id).text(item.name));
+                                    });
+
+                                }// length >0 bitti
+                                else {
+                                    $("#neigborhoodSelect").empty();
+                                    $("#neigborhoodSelect").prepend("<option value='0' selected>***Mahalle Seçiniz***</option>");
+                                    $("#neigborhoodSelect").prop("disabled", true);
+                                }
+                            }
+                            else {
+                                alert(res.message);
+
+                            }
+
+
+                        }, // success bitti
+                        error: function (err) {
+                            alert(res.message);
+                        } // error bitti
+                    });
+
+
+                } // if bitti
+
+
+            }); // districtSelect change bitti
+
+            $("#neigborhoodSelect").on("change", function () {
+
+                var neigId = $(this).val();
+                var cityid = $("#citySelect").val();
+                var dId = $("#districtSelect").val();
+                $("#postalColde").val('');
+
+                if (neigId > 0) {
+                    $("#fullAddressinput").prop("disabled", false);
+
+                    //posta kodunu APIden çekeceğiz.
+                    $.ajax({
+                        url: "/Home/GetPostalCode?cid=" + cityid + "&did=" + dId + "&nid=" + neigId,
+                        type: 'GET',
+                        dataType: 'json', // added data type
+                        success: function (res) {
+                            console.log("mahalleden sonra");
+                            console.log(res);
+                            if (res.issuccess) {
+                                var pc = res.postalcode;
+                                $("#postalColde").val(pc);
+                            }
+                            else {
+                                alert(res.message);
+                            //    $("#postalColde").val(0);
+                            }
+
+
+                        }, // success bitti
+                        error: function (err) {
+                            alert(res.message);
+                        } // error bitti
+                    });
+
+
+
+                } else {
+                    $("#fullAddressinput").prop("disabled", true);
+                }
+
+
+            }); // neigborhoodSelect change bitti
+
+
+        }); // doc ready bitti
+
+
+    </script>
+
+}

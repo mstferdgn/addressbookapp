@@ -1,0 +1,27 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+
+    <link rel="stylesheet" href="~/login-theme/logintheme.css" />
+</head>
+<body>
+    <br>
+    <br>
+    <div class="cont">
+       @RenderBody()
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+    <script>
+        document.querySelector('.img__btn').addEventListener('click', function () {
+            document.querySelector('.cont').classList.toggle('s--signup');
+        });
+    </script>
+    @RenderSection("scriptler",required:false)
+</body>
+
+</html>

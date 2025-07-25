@@ -1,0 +1,103 @@
+﻿@model RegisterViewModel
+@{
+    ViewData["Title"] = "GİRİŞ YAP";
+    Layout = "~/Views/Shared/_LayoutAccount.cshtml";
+}
+
+
+
+<form asp-controller="Account" asp-action="Login2" method="post">
+<div class="form sign-in">
+
+        <div asp-validation-summary="All" style="color:Red;margin-bottom:25px"></div>
+
+
+        @if (TempData["ActivationFailedMsg"] != null)
+        {
+            <div style="margin-bottom:20px">
+               <strong style="color:red;">BİLGİ!</strong> <span style="color:lightcoral">@TempData["ActivationFailedMsg"]</span>
+            </div>
+        }
+
+
+        @if (TempData["ActivationSuccessMsg"] != null)
+        {
+            <div style="margin-bottom:20px">
+                <strong style="color:blue;">BİLGİ!</strong> <span style="color:lightblue">@TempData["ActivationSuccessMsg"] </span>
+            </div>
+        }
+
+
+        @if (TempData["Register2SuccessMsg"] != null)
+        {
+            <div style="margin-bottom:20px">
+                <strong style="color:blue;">BİLGİ!</strong> <span style="color:lightblue">@TempData["Register2SuccessMsg"] </span>
+            </div>
+        }
+
+
+    <h2>HOŞGELDİNİZ...</h2>
+    <label>
+        <span>Email / Kullanıcı Adı</span>
+            <input type="text" name="emailorUsername" />
+    </label>
+    <label>
+        <span>Password</span>
+        <input type="password" name="password"/>
+    </label>
+    <p class="forgot-pass"><a href="/Account/ForgetPassword">Şifremi Unuttum!</a></p>
+    <button type="submit" class="submit">GİRİŞ YAP</button>
+
+</div>
+
+</form>
+
+<form asp-controller="Account" asp-action="Register2" method="post">
+
+<div class="sub-cont">
+    <div class="img">
+        <div class="img__text m--up">
+
+            <h3>Hesabınız YOK mu? KAYIT OLABİLİRSİNİZ</h3>
+        </div>
+        <div class="img__text m--in">
+
+            <h3>Hesabınız var mı?</h3>
+        </div>
+        <div class="img__btn">
+            <span class="m--up">Kayıt Ol</span>
+            <span class="m--in">Giriş Yap</span>
+        </div>
+    </div>
+    <div class="form sign-up">
+        <h2>Kayıt olmak için bilgilerinizi giriniz...</h2>
+        <label>
+            <span>İsim</span>
+            <input type="text" asp-for="Name"/>
+        </label>
+            <label>
+                <span>Soyisim</span>
+                <input type="text" asp-for="Surname" />
+            </label>
+
+            <label>
+                <span>Kullanıcı Adı</span>
+                <input type="text" asp-for="Username" />
+            </label>
+        <label>
+            <span>Email</span>
+            <input type="email" asp-for="Email" />
+        </label>
+        <label>
+            <span>Şifre</span>
+            <input type="password" asp-for="Password"/>
+        </label>
+            <label>
+                <span>Şifre Tekrar</span>
+                <input type="password" asp-for="ConfirmPassword" />
+            </label>
+        <button type="submit" class="submit">Kayıt OL</button>
+
+    </div>
+</div>
+</form>

@@ -1,0 +1,167 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = AddressBookWebUI
+build_property.RootNamespace = AddressBookWebUI
+build_property.ProjectDir = C:\Users\Mustafa\Desktop\Edutech_Assignments\ASSIGNMENTS\ASPNETMVC_CORE_ASSIGNMENT\AddressBook\AddressBookWebUI\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Mustafa\Desktop\Edutech_Assignments\ASSIGNMENTS\ASPNETMVC_CORE_ASSIGNMENT\AddressBook\AddressBookWebUI
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Mustafa/Desktop/Edutech_Assignments/ASSIGNMENTS/ASPNETMVC_CORE_ASSIGNMENT/AddressBook/AddressBookWebUI/Areas/Admin/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mustafa/Desktop/Edutech_Assignments/ASSIGNMENTS/ASPNETMVC_CORE_ASSIGNMENT/AddressBook/AddressBookWebUI/Areas/Admin/Views/Home/AllAddress.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxBbGxBZGRyZXNzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mustafa/Desktop/Edutech_Assignments/ASSIGNMENTS/ASPNETMVC_CORE_ASSIGNMENT/AddressBook/AddressBookWebUI/Areas/Admin/Views/Home/AllUsers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxBbGxVc2Vycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mustafa/Desktop/Edutech_Assignments/ASSIGNMENTS/ASPNETMVC_CORE_ASSIGNMENT/AddressBook/AddressBookWebUI/Areas/Admin/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mustafa/Desktop/Edutech_Assignments/ASSIGNMENTS/ASPNETMVC_CORE_ASSIGNMENT/AddressBook/AddressBookWebUI/Areas/Admin/Views/Home/NeighAdd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxOZWlnaEFkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mustafa/Desktop/Edutech_Assignments/ASSIGNMENTS/ASPNETMVC_CORE_ASSIGNMENT/AddressBook/AddressBookWebUI/Areas/Admin/Views/Home/NeighAddExcel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxOZWlnaEFkZEV4Y2VsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mustafa/Desktop/Edutech_Assignments/ASSIGNMENTS/ASPNETMVC_CORE_ASSIGNMENT/AddressBook/AddressBookWebUI/Areas/Admin/Views/Home/UpdateAddress.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxVcGRhdGVBZGRyZXNzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mustafa/Desktop/Edutech_Assignments/ASSIGNMENTS/ASPNETMVC_CORE_ASSIGNMENT/AddressBook/AddressBookWebUI/Areas/Admin/Views/Shared/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXEFjY2Vzc0RlbmllZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mustafa/Desktop/Edutech_Assignments/ASSIGNMENTS/ASPNETMVC_CORE_ASSIGNMENT/AddressBook/AddressBookWebUI/Areas/Admin/Views/Shared/Components/AdminLeftSideBarMenu/AdminLeftMenu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXENvbXBvbmVudHNcQWRtaW5MZWZ0U2lkZUJhck1lbnVcQWRtaW5MZWZ0TWVudS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mustafa/Desktop/Edutech_Assignments/ASSIGNMENTS/ASPNETMVC_CORE_ASSIGNMENT/AddressBook/AddressBookWebUI/Areas/Admin/Views/Shared/Components/AdminLeftSideBarMenu/AdminLeftMenu2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXENvbXBvbmVudHNcQWRtaW5MZWZ0U2lkZUJhck1lbnVcQWRtaW5MZWZ0TWVudTIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mustafa/Desktop/Edutech_Assignments/ASSIGNMENTS/ASPNETMVC_CORE_ASSIGNMENT/AddressBook/AddressBookWebUI/Areas/Admin/Views/Shared/Components/AdminLeftSideBarMenu/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXENvbXBvbmVudHNcQWRtaW5MZWZ0U2lkZUJhck1lbnVcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mustafa/Desktop/Edutech_Assignments/ASSIGNMENTS/ASPNETMVC_CORE_ASSIGNMENT/AddressBook/AddressBookWebUI/Areas/Admin/Views/Shared/Components/AdminTopNavMenu/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXENvbXBvbmVudHNcQWRtaW5Ub3BOYXZNZW51XERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mustafa/Desktop/Edutech_Assignments/ASSIGNMENTS/ASPNETMVC_CORE_ASSIGNMENT/AddressBook/AddressBookWebUI/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXRBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mustafa/Desktop/Edutech_Assignments/ASSIGNMENTS/ASPNETMVC_CORE_ASSIGNMENT/AddressBook/AddressBookWebUI/Areas/Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mustafa/Desktop/Edutech_Assignments/ASSIGNMENTS/ASPNETMVC_CORE_ASSIGNMENT/AddressBook/AddressBookWebUI/Areas/Admin/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mustafa/Desktop/Edutech_Assignments/ASSIGNMENTS/ASPNETMVC_CORE_ASSIGNMENT/AddressBook/AddressBookWebUI/Views/Account/DeletedUsertoActive.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxEZWxldGVkVXNlcnRvQWN0aXZlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mustafa/Desktop/Edutech_Assignments/ASSIGNMENTS/ASPNETMVC_CORE_ASSIGNMENT/AddressBook/AddressBookWebUI/Views/Account/ForgetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxGb3JnZXRQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mustafa/Desktop/Edutech_Assignments/ASSIGNMENTS/ASPNETMVC_CORE_ASSIGNMENT/AddressBook/AddressBookWebUI/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mustafa/Desktop/Edutech_Assignments/ASSIGNMENTS/ASPNETMVC_CORE_ASSIGNMENT/AddressBook/AddressBookWebUI/Views/Account/Login2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbjIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mustafa/Desktop/Edutech_Assignments/ASSIGNMENTS/ASPNETMVC_CORE_ASSIGNMENT/AddressBook/AddressBookWebUI/Views/Account/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxQcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mustafa/Desktop/Edutech_Assignments/ASSIGNMENTS/ASPNETMVC_CORE_ASSIGNMENT/AddressBook/AddressBookWebUI/Views/Account/RecoverPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWNvdmVyUGFzc3dvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mustafa/Desktop/Edutech_Assignments/ASSIGNMENTS/ASPNETMVC_CORE_ASSIGNMENT/AddressBook/AddressBookWebUI/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mustafa/Desktop/Edutech_Assignments/ASSIGNMENTS/ASPNETMVC_CORE_ASSIGNMENT/AddressBook/AddressBookWebUI/Views/Home/Address.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZGRyZXNzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mustafa/Desktop/Edutech_Assignments/ASSIGNMENTS/ASPNETMVC_CORE_ASSIGNMENT/AddressBook/AddressBookWebUI/Views/Home/AddressEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZGRyZXNzRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mustafa/Desktop/Edutech_Assignments/ASSIGNMENTS/ASPNETMVC_CORE_ASSIGNMENT/AddressBook/AddressBookWebUI/Views/Home/Deneme.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZW5lbWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mustafa/Desktop/Edutech_Assignments/ASSIGNMENTS/ASPNETMVC_CORE_ASSIGNMENT/AddressBook/AddressBookWebUI/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mustafa/Desktop/Edutech_Assignments/ASSIGNMENTS/ASPNETMVC_CORE_ASSIGNMENT/AddressBook/AddressBookWebUI/Views/Shared/Components/Deneme/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcRGVuZW1lXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mustafa/Desktop/Edutech_Assignments/ASSIGNMENTS/ASPNETMVC_CORE_ASSIGNMENT/AddressBook/AddressBookWebUI/Views/Shared/Components/TopMenuNav/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVG9wTWVudU5hdlxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mustafa/Desktop/Edutech_Assignments/ASSIGNMENTS/ASPNETMVC_CORE_ASSIGNMENT/AddressBook/AddressBookWebUI/Views/Shared/Components/TopMenuNav/TopMenu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVG9wTWVudU5hdlxUb3BNZW51LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mustafa/Desktop/Edutech_Assignments/ASSIGNMENTS/ASPNETMVC_CORE_ASSIGNMENT/AddressBook/AddressBookWebUI/Views/Shared/Components/TryBetul/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVHJ5QmV0dWxcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mustafa/Desktop/Edutech_Assignments/ASSIGNMENTS/ASPNETMVC_CORE_ASSIGNMENT/AddressBook/AddressBookWebUI/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mustafa/Desktop/Edutech_Assignments/ASSIGNMENTS/ASPNETMVC_CORE_ASSIGNMENT/AddressBook/AddressBookWebUI/Views/Shared/_LayoutAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRBY2NvdW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mustafa/Desktop/Edutech_Assignments/ASSIGNMENTS/ASPNETMVC_CORE_ASSIGNMENT/AddressBook/AddressBookWebUI/Views/Shared/_LayoutFurniAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRGdXJuaUFjY291bnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mustafa/Desktop/Edutech_Assignments/ASSIGNMENTS/ASPNETMVC_CORE_ASSIGNMENT/AddressBook/AddressBookWebUI/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mustafa/Desktop/Edutech_Assignments/ASSIGNMENTS/ASPNETMVC_CORE_ASSIGNMENT/AddressBook/AddressBookWebUI/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mustafa/Desktop/Edutech_Assignments/ASSIGNMENTS/ASPNETMVC_CORE_ASSIGNMENT/AddressBook/AddressBookWebUI/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mustafa/Desktop/Edutech_Assignments/ASSIGNMENTS/ASPNETMVC_CORE_ASSIGNMENT/AddressBook/AddressBookWebUI/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-ztjjoxvdz8

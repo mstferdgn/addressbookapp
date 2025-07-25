@@ -1,0 +1,69 @@
+﻿@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">Merhaba Yönetim sistemi giriş sayfasına hoşgeldiniz...</div>
+            </div>
+            <div class="card-body">
+                <form asp-controller="Account" asp-action="Login" asp-area="Admin" method="post">
+                    @if (!string.IsNullOrEmpty(ViewBag.LoginFailedMsg))
+                    {
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                            <strong>HATA!</strong> @ViewBag.LoginFailedMsg
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    }
+                <div class="row">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="form-group">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text"
+                                    id="usernameOrEmail">
+                                        <div class="icon-preview">
+                                            <i class="far fa-user"></i>
+                                        </div>
+                                    </span>
+                                    <input type="text" name="usernameOrEmail"
+                                           class="form-control"
+                                           placeholder="Kullanıcı adı ya da email"
+                                           aria-label="usernameOrEmail" />
+                                </div>
+                            </div>
+
+                         
+                            <div class="form-group">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text"
+                                    id="password">
+                                        <div class="icon-preview">
+                                            <i class="fas fa-pen"></i>
+                                        </div>
+                                    </span>
+                                    <input type="password" name="password"
+                                           class="form-control"
+                                           placeholder="Şifre"
+                                           aria-label="password" />
+                                </div>
+                            </div>
+
+
+                          
+                        </div>
+                    </div>
+
+                    <div>
+                        <button type="submit" class="btn btn-info">GİRİŞ YAP</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+

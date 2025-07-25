@@ -1,0 +1,544 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="row">
+    <div class="col-sm-6 col-md-3">
+        <div class="card card-stats card-round">
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col-icon">
+                        <div class="icon-big text-center icon-primary bubble-shadow-small">
+                            <i class="fas fa-users"></i>
+                        </div>
+                    </div>
+                    <div class="col col-stats ms-3 ms-sm-0">
+                        <div class="numbers">
+                            <p class="card-category">Toplam Kullanıcı</p>
+                            <h4 class="card-title">@ViewBag.TotalUserCount</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-3">
+        <div class="card card-stats card-round">
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col-icon">
+                        <div class="icon-big text-center icon-success bubble-shadow-small">
+                            <i class="fas fa-luggage-cart"></i>
+                        </div>
+                    </div>
+                    <div class="col col-stats ms-3 ms-sm-0">
+                        <div class="numbers">
+                            <p class="card-category">Toplam Adres</p>
+                            <h4 class="card-title">@ViewBag.TotalAddressCount</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-3">
+        <div class="card card-stats card-round">
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col-icon">
+                        <div class="icon-big text-center icon-secondary bubble-shadow-small">
+                            <i class="far fa-check-circle"></i>
+                        </div>
+                    </div>
+                    <div class="col col-stats ms-3 ms-sm-0">
+                        <div class="numbers">
+                            <p class="card-category">Bu Hafta Eklenen Adres</p>
+                            <h4 class="card-title">@ViewBag.ThisWeekAddedAdress</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-3">
+        <div class="card card-stats card-round">
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col-icon">
+                        <div class="icon-big text-center icon-secondary bubble-shadow-small">
+                            <i class="far fa-check-circle"></i>
+                        </div>
+                    </div>
+                    <div class="col col-stats ms-3 ms-sm-0">
+                        <div class="numbers">
+                            <p class="card-category">Bu AY Eklenen Adres</p>
+                            <h4 class="card-title">@ViewBag.ThisMonthAddedAdress</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card card-round">
+            <div class="card-header">
+                <div class="card-head-row">
+                    <div class="card-title">User Statistics</div>
+                    <div class="card-tools">
+                        <a href="#"
+                           class="btn btn-label-success btn-round btn-sm me-2">
+                            <span class="btn-label">
+                                <i class="fa fa-pencil"></i>
+                            </span>
+                            Export
+                        </a>
+                        <a href="#" class="btn btn-label-info btn-round btn-sm">
+                            <span class="btn-label">
+                                <i class="fa fa-print"></i>
+                            </span>
+                            Print
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="chart-container" style="min-height: 375px">
+                    <canvas id="statisticsChart"></canvas>
+                </div>
+                <div id="myChartLegend"></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">Bar Chart</div>
+            </div>
+            <div class="card-body">
+                <div class="chart-container">
+                    <canvas id="barChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">Pie Chart</div>
+            </div>
+            <div class="card-body">
+                <div class="chart-container">
+                    <canvas id="pieChart"
+                            style="width: 50%; height: 50%"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">Rol Grafiği</div>
+            </div>
+            <div class="card-body">
+                <div class="chart-container">
+                    <canvas id="bubbleChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">Cinsiyet Grafiği</div>
+            </div>
+            <div class="card-body">
+                <div class="chart-container">
+                    <canvas id="doughnutChart"
+                            style="width: 50%; height: 50%"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+@section scriptler {
+    <script>
+
+
+        $(document).ready(function () {
+
+            $.ajax({
+                url: "/Admin/Home/GetIndexStatisticsChartData",
+                type: 'GET',
+                dataType: 'json', // added data type
+                success: function (res) {
+                    console.log(res.data);
+                    if (res.success) {
+                        console.log(res);
+
+                        //Chart
+
+                        var ctx = document.getElementById('statisticsChart').getContext('2d');
+
+                        var statisticsChart = new Chart(ctx, {
+                            type: 'line',
+                            data: {
+                                labels: res.data.days,
+                                datasets: [{
+                                    label: res.data.label1.labelName,
+                                    borderColor: '#f3545d',
+                                    pointBackgroundColor: 'rgba(243, 84, 93, 0.6)',
+                                    pointRadius: 0,
+                                    backgroundColor: 'rgba(243, 84, 93, 0.4)',
+                                    legendColor: '#f3545d',
+                                    fill: true,
+                                    borderWidth: 2,
+                                    data: res.data.label1.data
+                                }, {
+                                    label: res.data.label2.labelName,
+                                    borderColor: '#fdaf4b',
+                                    pointBackgroundColor: 'rgba(253, 175, 75, 0.6)',
+                                    pointRadius: 0,
+                                    backgroundColor: 'rgba(253, 175, 75, 0.4)',
+                                    legendColor: '#fdaf4b',
+                                    fill: true,
+                                    borderWidth: 2,
+                                    data: res.data.label2.data,
+                                }, {
+                                    label: res.data.label3.labelName,
+                                    borderColor: '#177dff',
+                                    pointBackgroundColor: 'rgba(23, 125, 255, 0.6)',
+                                    pointRadius: 0,
+                                    backgroundColor: 'rgba(23, 125, 255, 0.4)',
+                                    legendColor: '#177dff',
+                                    fill: true,
+                                    borderWidth: 2,
+                                    data: res.data.label3.data,
+                                }]
+                            },
+                            options: {
+                                responsive: true,
+                                maintainAspectRatio: false,
+                                legend: {
+                                    display: false
+                                },
+                                tooltips: {
+                                    bodySpacing: 4,
+                                    mode: "nearest",
+                                    intersect: 0,
+                                    position: "nearest",
+                                    xPadding: 10,
+                                    yPadding: 10,
+                                    caretPadding: 10
+                                },
+                                layout: {
+                                    padding: { left: 5, right: 5, top: 15, bottom: 15 }
+                                },
+                                scales: {
+                                    yAxes: [{
+                                        ticks: {
+                                            fontStyle: "500",
+                                            beginAtZero: false,
+                                            maxTicksLimit: 5,
+                                            padding: 10
+                                        },
+                                        gridLines: {
+                                            drawTicks: false,
+                                            display: false
+                                        }
+                                    }],
+                                    xAxes: [{
+                                        gridLines: {
+                                            zeroLineColor: "transparent"
+                                        },
+                                        ticks: {
+                                            padding: 10,
+                                            fontStyle: "500"
+                                        }
+                                    }]
+                                },
+                                legendCallback: function (chart) {
+                                    var text = [];
+                                    text.push('<ul class="' + chart.id + '-legend html-legend">');
+                                    for (var i = 0; i < chart.data.datasets.length; i++) {
+                                        text.push('<li><span style="background-color:' + chart.data.datasets[i].legendColor + '"></span>');
+                                        if (chart.data.datasets[i].label) {
+                                            text.push(chart.data.datasets[i].label);
+                                        }
+                                        text.push('</li>');
+                                    }
+                                    text.push('</ul>');
+                                    return text.join('');
+                                }
+                            }
+                        });
+
+                        var myLegendContainer = document.getElementById("myChartLegend");
+
+                        // generate HTML legend
+                        myLegendContainer.innerHTML = statisticsChart.generateLegend();
+
+                        // bind onClick event to all LI-tags of the legend
+                        var legendItems = myLegendContainer.getElementsByTagName('li');
+                        for (var i = 0; i < legendItems.length; i += 1) {
+                            legendItems[i].addEventListener("click", legendClickCallback, false);
+                        }
+
+                    } // if bitti
+                    else {
+                        alert(res.message);
+
+                    } // else bitti
+
+
+                }, // success bitti
+                error: function (err) {
+                    alert(res.message);
+                } // error bitti
+            });
+
+
+            $.ajax({
+                url: "/Admin/Home/GetBarChartData",
+                type: 'GET',
+                dataType: 'json', // added data type
+                success: function (res) {
+                    console.log(res.data);
+                    if (res.success) {
+                        console.log(res);
+                        var barChart = document.getElementById("barChart").getContext("2d");
+                        var myBarChart = new Chart(barChart, {
+                            type: "bar",
+                            data: {
+                                labels: res.regions,
+                                datasets: [
+                                    {
+                                        label: "Bölgelere Göre Adres Sayıları",
+                                        backgroundColor: "rgb(23, 125, 255)",
+                                        borderColor: "rgb(23, 125, 255)",
+                                        data: res.counts,
+                                    },
+                                ],
+                            },
+                            options: {
+                                responsive: true,
+                                maintainAspectRatio: false,
+                                scales: {
+                                    yAxes: [
+                                        {
+                                            ticks: {
+                                                beginAtZero: true,
+                                            },
+                                        },
+                                    ],
+                                },
+                            },
+                        });
+
+
+                        var pieChart = document.getElementById("pieChart").getContext("2d");
+                        var myPieChart = new Chart(pieChart, {
+                            type: "pie",
+                            data: {
+                                datasets: [
+                                    {
+                                        data: res.counts,
+                                        backgroundColor: ["#1d7af3", "#f3545d", "#fdaf4b", "#622569", "#588c7e", "#674d3c", "#3b3a30"],
+                                        borderWidth: 0,
+                                    },
+                                ],
+                                labels: res.regions,
+                            },
+                            options: {
+                                responsive: true,
+                                maintainAspectRatio: false,
+                                legend: {
+                                    position: "bottom",
+                                    labels: {
+                                        fontColor: "rgb(154, 154, 154)",
+                                        fontSize: 11,
+                                        usePointStyle: true,
+                                        padding: 20,
+                                    },
+                                },
+                                pieceLabel: {
+                                    render: "percentage",
+                                    fontColor: "white",
+                                    fontSize: 14,
+                                },
+                                tooltips: false,
+                                layout: {
+                                    padding: {
+                                        left: 20,
+                                        right: 20,
+                                        top: 20,
+                                        bottom: 20,
+                                    },
+                                },
+                            },
+                        });
+
+                    } // if bitti
+                    else {
+                        alert(res.message);
+
+                    } // else bitti
+
+
+                }, // success bitti
+                error: function (err) {
+                    alert(res.message);
+                } // error bitti
+            }); // GetBarChartData ajax bitti
+
+            $.ajax({
+                url: "/Admin/Home/GetBubleChartData",
+                type: 'GET',
+                dataType: 'json', // added data type
+                success: function (res) {
+                    console.log(res.data);
+                    if (res.success) {
+                        console.log("buble data geldi");
+                     //   console.log(res);
+
+                        var bubleData = [];
+                    
+                        for (let i = 0; i < res.data.length; i++) {
+                            
+                          //  console.log(res.data[i]);
+                            var bubleItemData = [];
+                            var bubleItem = {
+                                label:res.data[i].label,
+                                backgroundColor: "#716aca"
+                            };
+                            bubleItemData.push(res.data[i].data);
+                            bubleItem.data = bubleItemData;
+
+                            bubleData.push(bubleItem);
+                        }
+
+                        console.log(bubleData);
+
+                        var bubbleChart = document.getElementById("bubbleChart").getContext("2d");
+                        var myBubbleChart = new Chart(bubbleChart, {
+                            type: "bubble",
+                            data: {
+                                datasets: bubleData,
+                            },
+                            options: {
+                                responsive: true,
+                                maintainAspectRatio: false,
+                                legend: {
+                                    position: "bottom",
+                                },
+                                scales: {
+                                    yAxes: [
+                                        {
+                                            ticks: {
+                                                beginAtZero: true,
+                                            },
+                                        },
+                                    ],
+                                    xAxes: [
+                                        {
+                                            ticks: {
+                                                beginAtZero: true,
+                                            },
+                                        },
+                                    ],
+                                },
+                            },
+                        });
+
+                    } // if bitti
+                    else {
+                        alert(res.message);
+
+                    } // else bitti
+
+
+                }, // success bitti
+                error: function (err) {
+                    alert(res.message);
+                } // error bitti
+            }); // GetBubleChartData ajax bitti
+
+            $.ajax({
+                url: "/Admin/Home/GetDoughnutChartData",
+                type: 'GET',
+                dataType: 'json', // added data type
+                success: function (res) {
+                    console.log(res.data);
+                    if (res.success) {
+                        console.log("DoughnutChartData data geldi");
+                           console.log(res);
+                        var doughnutChart = document
+                            .getElementById("doughnutChart")
+                            .getContext("2d");
+                        var myDoughnutChart = new Chart(doughnutChart, {
+                            type: "doughnut",
+                            data: {
+                                datasets: [
+                                    {
+                                        data: res.counts,
+                                        backgroundColor: ["#f3545d", "#fdaf4b", "#1d7af3"],
+                                    },
+                                ],
+
+                                labels: res.genders,
+                            },
+                            options: {
+                                responsive: true,
+                                maintainAspectRatio: false,
+                                legend: {
+                                    position: "bottom",
+                                },
+                                layout: {
+                                    padding: {
+                                        left: 20,
+                                        right: 20,
+                                        top: 20,
+                                        bottom: 20,
+                                    },
+                                },
+                            },
+                        });
+
+
+
+                    } // if bitti
+                    else {
+                        alert(res.message);
+
+                    } // else bitti
+
+
+                }, // success bitti
+                error: function (err) {
+                    alert(res.message);
+                } // error bitti
+            }); // GetDoughnutChartData ajax bitti
+
+        }); // doc ready bitti
+
+      
+
+
+
+    </script>
+
+
+}

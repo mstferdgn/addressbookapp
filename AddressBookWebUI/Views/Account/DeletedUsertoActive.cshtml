@@ -1,0 +1,26 @@
+﻿@model AppUser
+@{
+    ViewData["Title"] = "DeletedUsertoActive";
+    Layout = "~/Views/Shared/_LayoutFurniAccount.cshtml";
+}
+
+<div class="col-md-8 col-lg-8 pb-4">
+    <form asp-controller="Account" asp-action="DeletedUsertoActive" method="post">
+        <input type="hidden" asp-for="UserName" />
+        <input type="hidden" asp-for="Name" />
+        <input type="hidden" asp-for="Surname" />
+        <input type="hidden" asp-for="Id" />
+        <input type="hidden" asp-for="Email" />
+        <div class="row">
+            <h4>
+                Sayın @Model.Name @Model.Surname,<br />
+                Sistemi tekrar kullanabilmeniz için rolünüzü güncellememiz gerekiyor. Aşağıdaki butona tıklayınız.
+            </h4>
+        </div>
+        <div class="row">
+            <input type="submit" value="Beni AKTİF Yap" class="btn btn-info" />
+        </div>
+    </form>
+
+
+</div>

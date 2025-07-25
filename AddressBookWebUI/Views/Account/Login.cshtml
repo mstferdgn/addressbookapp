@@ -1,0 +1,73 @@
+﻿@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_LayoutFurniAccount.cshtml";
+}
+
+
+
+<div class="col-md-8 col-lg-8 pb-4">
+
+   
+
+    @if (TempData["ProfileUserNameChangedSuccessMsg"] != null)
+    {
+        <div class="alert alert-info alert-dismissible fade show" role="alert">
+            <strong>BİLGİ!</strong> @TempData["ProfileUserNameChangedSuccessMsg"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+    @if (TempData["RegisterSuccessMsg"] != null)
+    {
+        <div class="alert alert-info alert-dismissible fade show" role="alert">
+            <strong>BİLGİ!</strong> @TempData["RegisterSuccessMsg"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+    
+    @if (TempData["RecoverPasswordSuccessMsg"] != null)
+    {
+        <div style="margin-bottom:20px">
+            <strong style="color:blue;">BİLGİ!</strong> <span style="color:#ee82ee">@TempData["RecoverPasswordSuccessMsg"]</span>
+        </div>
+    }
+    @if (TempData["ActivationFailedMsg"] != null)
+    {
+        <div style="margin-bottom:20px">
+            <strong style="color:red;">BİLGİ!</strong> <span style="color:lightcoral">@TempData["ActivationFailedMsg"]</span>
+        </div>
+    }
+
+
+    @if (TempData["ActivationSuccessMsg"] != null)
+    {
+        <div style="margin-bottom:20px">
+            <strong style="color:blue;">BİLGİ!</strong> <span style="color:darkblue">@TempData["ActivationSuccessMsg"] </span>
+        </div>
+    }
+
+    <form asp-action="Login" asp-controller="Account" method="post">
+
+        <div asp-validation-summary="All" style="color:red"></div>
+        <div class="row">
+            <div class="col-12 mb-5">
+                <div class="form-group">
+                    <label class="text-black" for="fname">Email / Kullanıcı Adı:</label>
+                    <input type="text" class="form-control" id="emailtext" name="emailorUsername">
+                </div>
+            </div>
+            <div class="col-12 mb-5">
+                <div class="form-group">
+                    <label class="text-black" for="lname">Şifre:</label>
+                    <input type="password" class="form-control" id="passwordtext" name="password">
+                </div>
+            </div>
+        </div>
+        <a asp-controller="Account" asp-action="ForgetPassword">Şifremi Unuttum!</a><br /><br />
+        <button type="submit" class="btn btn-primary-hover-outline">GİRİŞ YAP</button>
+    </form>
+    <br />
+    <a asp-controller="Account" asp-action="Register" class="btn btn-primary-hover-outline">KAYIT OL</a><br /><br />
+
+</div>
+
+
