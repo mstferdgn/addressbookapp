@@ -39,9 +39,9 @@ namespace AddressBookWebUI
             builder.Services.AddDbContext<AddressBookContext>(options =>
             {
 
-                //.net framework mvc projesinde connection stringi web.configten almıştık. Core projesinde webconfig dosyası yok! Bu durumda biz connectionstringi appsettings.json aldı dosyadan alacağız.
-                options.UseSqlServer(builder.Configuration.GetConnectionString("BetulHoca"));
-                //options.UseSqlServer(builder.Configuration.GetConnectionString("Omer"));
+                
+                options.UseSqlServer(builder.Configuration.GetConnectionString("Mustafa"));
+                
                 options.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
 
             });
@@ -137,7 +137,7 @@ namespace AddressBookWebUI
             }
             app.UseStaticFiles(); // wwwroot klasörünün dahil olması için yazılması gerekli olan ayar.
 
-            //tema kullanacaksanız wwwroot içine yerleştirmelisiniz.
+           
             app.UseRouting();  // aşağıdaki app.MappControllerRoute'u kullanabilmemiz için yazılması gereken ayar
 
             app.UseAuthentication();// login ve logout

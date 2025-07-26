@@ -24,7 +24,7 @@ namespace AddressBookBL.EmailSenderProcess
             {
 
                 MailMessage mail = new MailMessage();
-                mail.From = new MailAddress("hgyazilimsinifi@outlook.com");
+                mail.From = new MailAddress("hgydsad@outlook.com");
                 mail.To.Add(new MailAddress(model.To));
                 mail.Subject = model.Subject;
                 mail.SubjectEncoding = Encoding.UTF8;
@@ -35,13 +35,13 @@ namespace AddressBookBL.EmailSenderProcess
                 //Not: Bcc olacaksa buraya kodları eklememiz gerekiyor
 
                 SmtpClient client = new SmtpClient();
-                //Not: mayıs  2022 tarihine kadar gmail için de aynısını yapardık
+                
                 //Ama sistemi güvenlik nedeniyle değiştirdiler
                 //Gmail kullanabilmemiz için gmailden token almamız gerekli
 
                 //Not: Güvenlik nedeniyle hesabın şifresini ve adını böyle yazmamlıyız.
                 //Veri tabanında Parameters ya da Degerler tablosu şeklinde bir tabloda tutabiliriz.
-                client.Credentials = new System.Net.NetworkCredential("hgyazilimsinifi@outlook.com", "betulkadikoy2023");
+                client.Credentials = new System.Net.NetworkCredential("hgydsad@outlook.com", "mstf2023");
                 client.Port = 587; //25 
                 client.Host = "smtp-mail.outlook.com";
                 client.EnableSsl = true;

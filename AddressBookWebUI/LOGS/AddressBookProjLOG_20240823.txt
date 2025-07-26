@@ -1,7 +1,0 @@
-23-08-2024 14:18:05 ****Program başladı*****
-23-08-2024 14:18:10 Login sayfası çağrıldı!
-23-08-2024 14:18:20 ayberkgorgun@hotmail.com kullanıcısı sisteme giriş yaptı
-23-08-2024 14:20:11 ****Program başladı*****
-23-08-2024 14:26:02 ****Program başladı*****
-23-08-2024 14:27:16 ****Program başladı*****
-23-08-2024 14:48:15 ****Program başladı*****
